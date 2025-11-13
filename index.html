@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Road+Rage&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="progress-bar">
+      <div id="section-home"></div>
+      <div id="section-about"></div>
+      <div id="section-cafe"></div>
+      <div id="section-service"></div>
+      <div id="section-merch"></div>
+      <div id="section-contact"></div>
+
+      <div class="indicator">Scroll Y: <span id="scrollValue">0</span></div>
+
+      <!-- home page real background image -->
+      <div id="home-bg" class="fixed">
+        <img
+          class="bg-img"
+          src="./assets/images/motorcycle-wallpaper.png"
+          alt="motorcycle-wallpaper"
+        />
+      </div>
+
+      <!-- home page logos, badeges -->
+      <div
+        id="home-badges"
+        class="fixed"
+        data-animate="moveY"
+        data-snap="snap"
+        data-start-pos="0"
+        data-end-pos="200"
+        data-start-val="0"
+        data-end-val="-50"
+      >
+        <div class="title-flex">
+          <div class="pad-box"></div>
+          <div class="brand-flex">
+            <img class="title-brand" src="./assets/logos/ripe.png" />
+            <img class="title-brand" src="./assets/logos/mc3-colour.svg" />
+            <img
+              class="title-brand"
+              src="./assets/logos/cafe-racer-colour.svg"
+            />
+          </div>
+          <div id="title-decal-wrap">
+            <iframe
+              id="title-decal"
+              src="./public/title-decal.html"
+              title="title decal"
+              style="border: none"
+            >
+            </iframe>
+          </div>
+          <div class="pad-box"></div>
+        </div>
+      </div>
+
+      <!-- navbar -->
+      <nav
+        id="nav"
+        class="fixed"
+        data-animate="moveY"
+        data-snap="snap"
+        data-start-pos="0"
+        data-end-pos="200"
+        data-start-val="90"
+        data-end-val="0"
+      >
+        <div class="nav center">
+          <!-- calc the contents of this div from nav1 -->
+          <a href="#section-home" class="nav-link nav-home active">
+            <span class="nav-link-span">
+              <span class="u-nav">Home</span>
+            </span>
+          </a>
+          <a href="#section-about" class="nav-link">
+            <span class="nav-link-span">
+              <span class="u-nav">About</span>
+            </span>
+          </a>
+          <a href="#section-cafe" class="nav-link">
+            <span class="nav-link-span">
+              <span class="u-nav">Cafe</span>
+            </span>
+          </a>
+          <a href="#section-service" class="nav-link">
+            <span class="nav-link-span">
+              <span class="u-nav">Services</span>
+            </span>
+          </a>
+          <a href="#section-merch" class="nav-link">
+            <span class="nav-link-span">
+              <span class="u-nav">Merch</span>
+            </span>
+          </a>
+          <a href="#section-contact" class="nav-link">
+            <span class="nav-link-span">
+              <span class="u-nav">Contact</span>
+            </span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- about section wipe out from under nav-->
+      <section
+        id="about"
+        class="fixed"
+        data-animate="height"
+        data-snap="snap"
+        data-start-pos="0"
+        data-end-pos="200"
+        data-start-val="0"
+        data-end-val="90"
+      >
+        <div class="flex-container">
+          <div class="column hide-narrow">
+            <div class="about-sticky">
+              <iframe
+                id="about-gallery"
+                src="./public/gallery.html"
+                title="gallery"
+                style="border: none"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="about-scroll">
+              <div
+                class="about-content"
+                data-animate="scrollHiddenContentY"
+                data-start-pos="200"
+                data-end-pos="800"
+              >
+                <div class="about-card">
+                  <h2>
+                    <span class="about-quote">
+                      A <span class="emphasise">throttle twist</span> away from
+                      history.
+                    </span>
+                  </h2>
+                </div>
+                <div class="about-card">
+                  <p class="about-text">
+                    Follow the scent of roast coffee and oil to find a
+                    collection of over 60 motorcycles, spanning seven decades of
+                    riding heritage, from the polished chrome of the 1950s to
+                    the race-bred lines of the modern era. Each machine tells a
+                    story of craftsmanship, innovation, or the people who rode
+                    them.
+                  </p>
+                </div>
+                <div class="about-card">
+                  <h2>
+                    <span class="about-quote">
+                      <span class="emphasise">Each mark</span>
+                      on the tank has a story.
+                      <span class="emphasise">Each machine</span>, a journey.
+                    </span>
+                  </h2>
+                </div>
+                <div class="about-card">
+                  <p class="about-text">
+                    The collection was built not just to display bikes, but to
+                    keep their spirit alive — engines that were meant to run,
+                    not sit silent. Visitors can wander between machines that
+                    once roared down open roads, then sit back with a coffee and
+                    take in the sound, smell, and soul of motorcycling's golden
+                    years.
+                  </p>
+                </div>
+                <div class="about-card">
+                  <h2>
+                    <span class="about-quote">
+                      We're <span class="emphasise">sparked</span> by stories
+                      and the <span class="emphasise">echo</span> of engines.
+                    </span>
+                  </h2>
+                </div>
+                <div class="about-card">
+                  <p class="about-text">
+                    This space celebrates the connection between people,
+                    machines, and moments. It's a tribute to the riders who
+                    shaped motorcycling's past and the ones still writing its
+                    future.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pad-box"></div>
+        </div>
+      </section>
+
+      <!-- cafe section fade in over about-->
+      <section
+        id="cafe"
+        class="fixed"
+        data-animate="opacity"
+        data-snap="snap"
+        data-start-pos="800"
+        data-end-pos="1200"
+        data-start-val="0"
+        data-end-val="1"
+        data-options="display-start: none"
+      >
+        <video autoplay muted loop id="cafe-bg">
+          <source src="./assets/videos/cafe-background.mp4" type="video/mp4" />
+        </video>
+
+        <div
+          id="cafe-container"
+          class="fixed"
+          data-animate="moveY"
+          data-snap="snap"
+          data-start-pos="800"
+          data-end-pos="3000"
+          data-start-val="100"
+          data-end-val="-105"
+        >
+          <div class="cafe-flex">
+            <div class="pad-box"></div>
+
+            <div class="billboard-small-flex">
+              <img
+                class="cafe-brand"
+                src="./assets/logos/cafe-racer-tank.svg"
+              />
+              <img
+                id="cafe-billboard-small"
+                src="./assets/graphics/cafe-side-menu.svg"
+                alt="billboard graphic"
+              />
+            </div>
+
+            <div id="cafe-billboard-wrap">
+              <img
+                id="cafe-billboard"
+                src="./assets/graphics/cafe-menu.svg"
+                alt="billboard graphic"
+              />
+            </div>
+
+            <div class="pad-box"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- services section fade in over cafe-->
+      <section
+        id="services"
+        class="fixed"
+        data-animate="opacity"
+        data-snap="snap"
+        data-start-pos="2500"
+        data-end-pos="2900"
+        data-start-val="0"
+        data-end-val="1"
+        data-options="display-start: none"
+      >
+        <div class="parts-scroll">
+          <div
+            class="parts-content"
+            data-animate="scrollHiddenContentY"
+            data-start-pos="3000"
+            data-end-pos="3300"
+          >
+            <div class="info-card">
+              <img src="./assets/images/spare-parts.png" />
+              <div class="card-content">
+                <h2>
+                  <span class="card-title">
+                    In need of a <span class="emphasise">Kickstart</span>&nbsp?
+                  </span>
+                </h2>
+
+                <p class="card-text">
+                  Whether you’re reviving a long-sleeping classic or hunting for
+                  that elusive part, our dismantling bay is where forgotten
+                  bikes find new life. Each machine is carefully stripped,
+                  catalogued, and stored — ready to give another rider the spark
+                  they need to get rolling again. From engines to emblems, every
+                  piece still has a story to tell.
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <img src="./assets/images/custom-bike.jpg" />
+              <div class="card-content">
+                <h2>
+                  <span class="card-title">
+                    From <span class="emphasise">Rust</span> to
+                    <span class="emphasise">Radiance</span>&nbsp.
+                  </span>
+                </h2>
+
+                <p class="card-text">
+                  A careful hand, a soft cloth, and a lot of pride - that’s how
+                  we detail. We’ll chase the grime from every groove so your
+                  bike leaves looking sharper, smoother, and ready to turn heads
+                  again.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- merch section wipe in over cafe-->
+      <section
+        id="merch"
+        class="fixed"
+        data-animate="moveY"
+        data-snap="none"
+        data-start-pos="3100"
+        data-end-pos="5400"
+        data-start-val="100"
+        data-end-val="-90"
+        data-options="display-start: none"
+      >
+        <div class="merch-flex">
+          <div class="merch-col-one">
+            <h2>
+              <span class="about-quote">
+                <span class="emphasise">Merchandise</span>
+              </span>
+            </h2>
+            <p class="about-text">
+              These shirts aren't some delicate fashion statement.
+            </p>
+            <p class="about-text">
+              We sell shirts made for garage life. They'll catch grease stains
+              and look good doing it. Once they're full of holes, no worries -
+              that’s the start of its life as your favourite rag.
+            </p>
+            <p class="about-text">
+              Buy it, thrash it, wipe your hands on it. It’s all part of the
+              ride.
+            </p>
+            <p class="about-text">see more ></p>
+          </div>
+          <div class="merch-col-two">
+            <div class="shop-item top">
+              <div class="untranslate-group">
+                <img
+                  src="./assets/images/tshirt-caferacer.png"
+                  alt="Product Name"
+                />
+              </div>
+            </div>
+
+            <div class="shop-item bottom">
+              <div class="untranslate-group">
+                <img
+                  src="./assets/images/tshirt-caferacer.png"
+                  alt="Product Name"
+                />
+              </div>
+            </div>
+
+            <div class="shop-item large">
+              <div class="untranslate-group">
+                <img
+                  src="./assets/images/tshirt-caferacer.png"
+                  alt="Product Name"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- animated chain across bottom of merch section -->
+        <div class="merch-chain">
+          <img
+            src="./assets/graphics/chain.svg"
+            alt="chain graphic"
+            data-animate="moveX"
+            data-snap="none"
+            data-start-pos="3400"
+            data-end-pos="5000"
+            data-start-val="0"
+            data-end-val="-90"
+            data-options="display-start: none"
+          />
+        </div>
+      </section>
+
+      <!-- contact section wipe in over cafe -->
+      <section
+        id="contact"
+        class="fixed"
+        data-animate="height"
+        data-snap="none"
+        data-start-pos="4200"
+        data-end-pos="4900"
+        data-start-val="0"
+        data-end-val="90"
+        data-options="display-start: none"
+      >
+        <!-- contact section wipe out to make room for footer -->
+        <div
+          id="contact-wipe"
+          data-animate="moveY"
+          data-snap="none"
+          data-start-pos="5900"
+          data-end-pos="6100"
+          data-start-val="0"
+          data-end-val="-40"
+        >
+          <div class="contact-bg">
+            <img
+              class="bg-img"
+              src="./assets/images/garage-door-dark.JPG"
+              alt="garage door"
+            />
+          </div>
+
+          <!-- contact section content scroll -->
+          <div class="contact-scroll">
+            <div
+              class="contact-content"
+              data-animate="scrollHiddenContentY"
+              data-start-pos="4900"
+              data-end-pos="5900"
+            >
+              <div class="contact-card find-us">
+                <h2>
+                  <span class="about-quote">
+                    <span class="emphasise">Find Us</span>
+                  </span>
+                </h2>
+                <div class="frame">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6011.342753825909!2d175.0861697762016!3d-41.11986757133499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d40ada5c548be6d%3A0xfd6c40f6df6208cc!2sMC3%20Collection%20%26%20Cafe!5e0!3m2!1sen!2snz!4v1762936223806!5m2!1sen!2snz"
+                    width="100%"
+                    height="250px"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+
+                <div>
+                  <p class="card-text">
+                    47 Montgomery Crescent<br />
+                    Clouston Park<br />
+                    Upper Hutt<br />
+                    5018<br />
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-card social">
+                <h2>
+                  <span class="about-quote">
+                    <span class="emphasise">Social media</span>
+                  </span>
+                </h2>
+                <div class="center-content">
+                  <div></div>
+                  <iframe
+                    class="fb-small"
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FMC3.Cafe%2F&tabs&width=500&height=80&small_header=true&adapt_container_width=false&hide_cover=false&show_facepile=false&appId"
+                    width="500"
+                    height="80"
+                    style="border: none; overflow: hidden"
+                    scrolling="no"
+                    frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                  ></iframe>
+                </div>
+              </div>
+
+              <div class="contact-card contact-form">
+                <h2>
+                  <span class="about-quote">
+                    <span class="emphasise">Get in touch</span>
+                  </span>
+                </h2>
+                <!-- Replace the action URL with your server or form endpoint -->
+                <form action="/send-message" method="post">
+                  <div>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" required />
+                  </div>
+                  <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required />
+                  </div>
+                  <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                  </div>
+                  <button type="submit">Send Message</button>
+                </form>
+              </div>
+
+              <div class="contact-card subscriber">
+                <h2>
+                  <span class="about-quote">
+                    <span class="emphasise">Monthly Newsletter</span>
+                  </span>
+                </h2>
+
+                <div class="ml-embedded" data-form="ITfMwf"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        id="footer-wipe"
+        class="fixed"
+        data-animate="moveY"
+        data-snap="none"
+        data-start-pos="5900"
+        data-end-pos="6100"
+        data-start-val="40"
+        data-end-val="0"
+      >
+        <div></div>
+      </footer>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- MailerLite Universal -->
+    <script>
+      (function (w, d, e, u, f, l, n) {
+        (w[f] =
+          w[f] ||
+          function () {
+            (w[f].q = w[f].q || []).push(arguments);
+          }),
+          (l = d.createElement(e)),
+          (l.async = 1),
+          (l.src = u),
+          (n = d.getElementsByTagName(e)[0]),
+          n.parentNode.insertBefore(l, n);
+      })(
+        window,
+        document,
+        "script",
+        "https://assets.mailerlite.com/js/universal.js",
+        "ml"
+      );
+      ml("account", "1916603");
+    </script>
+    <!-- End MailerLite Universal -->
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotating Circular Text</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Road+Rage&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      text {
+        font-family: "Poppins", cursive;
+        font-weight: 700;
+        font-size: 7pt;
+        fill: #764e2f;
+        letter-spacing: 0.1rem;
+      }
+
+      .rotate {
+        animation: spin 0.4s ease 1;
+      }
+
+      #rotatingGroup {
+        transform: translate(-50%, -50%);
+      }
+
+      #untranslateGroup {
+        transform: translate(50%, 50%);
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg) translate(-50%, -50%);
+        }
+        10% {
+          transform: rotate(10deg) translate(-50%, -50%);
+        }
+        90% {
+          transform: rotate(350deg) translate(-50%, -50%);
+        }
+        100% {
+          transform: rotate(360deg) translate(-50%, -50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <svg viewBox="-0 -0 200 200">
+      <defs>
+        <!-- text path -->
+        <path
+          id="circlePath"
+          d="M100,100 m-85,0 a85,85 0 1,1 170,0 a85,85 0 1,1 -170,0"
+        />
+
+        <!-- motorbike image-->
+        <mask id="mask-bike">
+          <image
+            href="../assets/images/classic-bike-monotone.svg"
+            height="200"
+          />
+        </mask>
+      </defs>
+
+      <g>
+        <circle
+          cx="100"
+          cy="100"
+          r="99"
+          fill="#efefe5"
+          stroke="#764e2f"
+          stroke-width="1"
+        />
+        <circle
+          cx="100"
+          cy="100"
+          r="100"
+          fill="#764e2f"
+          mask="url(#mask-bike)"
+        />
+      </g>
+
+      <!-- Rotating text group -->
+      <g id="untranslateGroup">
+        <g id="rotatingGroup">
+          <text>
+            <textPath id="circularText1" href="#circlePath" startOffset="0%">
+              Less talk more throttle
+            </textPath>
+
+            <textPath id="circularText2" href="#circlePath" startOffset="50%">
+              Until we get to MC3...
+            </textPath>
+          </text>
+        </g>
+      </g>
+    </svg>
+
+    <script>
+      let messages1 = [
+        "Fuel up - Ride hard",
+        "Every twist of the",
+        "From dust and chrome",
+        "Less talk more throttle",
+      ];
+
+      let messages2 = [
+        "Eat - Sleep - Repeat",
+        "throttle rewinds history.",
+        "the legends ride again",
+        "Until we get to MC3...",
+      ];
+      let current = 0;
+
+      function animateAndChange() {
+        const group = document.getElementById("rotatingGroup");
+        const textPath1 = document.getElementById("circularText1");
+        const textPath2 = document.getElementById("circularText2");
+
+        // Trigger rotation animation
+        group.classList.add("rotate");
+
+        // Change text content
+        current = (current + 1) % Math.min(messages1.length, messages2.length);
+        textPath1.textContent = messages1[current];
+        textPath2.textContent = messages2[current];
+      }
+
+      document
+        .getElementById("rotatingGroup")
+        .addEventListener("animationend", function () {
+          this.classList.remove("rotate");
+        });
+
+      setInterval(() => {
+        animateAndChange();
+      }, 2000);
+    </script>
+  </body>
+</html>
