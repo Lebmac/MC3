@@ -495,10 +495,13 @@
                   </span>
                 </h2>
                 <!-- Replace the action URL with your server or form endpoint -->
-                <form action="/send-message" method="post">
+                <form action="https://formsubmit.co/richard@mc3.nz" method="post">
+                  <input type="text" name="_honey" style="display: none;">
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_next" value="https://lebmac.github.io/MC3/success.html">
                   <div>
                     <label for="name">Name</label>
-                    <input id="name" name="name" required />
+                    <input id="name" name="name" type="text" required />
                   </div>
                   <div>
                     <label for="email">Email</label>
@@ -506,7 +509,7 @@
                   </div>
                   <div>
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message" name="message" type="text" required></textarea>
                   </div>
                   <button type="submit">Send Message</button>
                 </form>
@@ -570,3 +573,4 @@
     <script src="index.js"></script>
   </body>
 </html>
+
