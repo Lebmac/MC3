@@ -44,13 +44,12 @@ $(document).on("scroll", util.scrollEvent);
 // ---------------------
 
 // Update CSS variable on scroll
+/* 
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY || window.pageYOffset;
   document.documentElement.style.setProperty('--scroll-y', scrollY);
-
-  // Example: also show it in the UI
   document.getElementById('scrollValue').textContent = Math.round(scrollY);
-});
+}); */
 
 // ---------------------
 // ANIMATION HANDLER & DEBOUNCING
@@ -204,4 +203,5 @@ function scrollHiddenContentY(el, progress, startVal=0, endVal=1, options="") {
   const scrollPosition = progress * (el[0].scrollHeight - el.innerHeight()); 
 
   el.scrollTop(scrollPosition);
+
 }
