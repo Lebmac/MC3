@@ -1,0 +1,62 @@
+# =========================
+# OS-specific files
+# =========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# =========================
+# Node / Build tools
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+build/
+.tmp/
+.cache/
+out/
+tests/
+performance/
+unused/
+
+# =========================
+# Environment & config
+# =========================
+.env
+.env.*.local
+
+# =========================
+# IDE / Editor files
+# =========================
+# VS Code
+.vscode/
+.history/
+
+# Workspace
+*.code-workspace
+
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Misc
+# =========================
+*.swp
+*.swo
