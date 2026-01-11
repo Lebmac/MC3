@@ -439,13 +439,52 @@ nav .center {
 }
 
 #cafe-billboard-wrap { 
+  position: relative;
   padding: 1vh 1vw;
   width: 90%;
+  display: grid;
+}
+
+#cafe-billboard-wrap>* { 
+  grid-area: 1 / 1;
 }
 
 #cafe-billboard { 
   width: 100%;
   filter: drop-shadow(15px 15px 0px RGBA(0, 0, 0, 0.4));
+  z-index: 1;
+}
+
+#cafe-billboard-overlay {
+  --base-px: 5.5vw;
+  --wide-px: max(0px, calc(25vw - 250px));
+
+  z-index: 2;
+  display: grid;
+  padding: 0px calc(var(--base-px) + var(--wide-px));
+  grid-template-rows: 4fr 1.5fr 9fr 0.75fr;
+  gap: 2rem;
+  grid-template-areas: 
+  "top"
+  "title"
+  "body"
+  "bottom";
+}
+
+@media (orientation: landscape) {
+  #cafe-billboard-overlay {
+    --base-px: 3.5vw;
+  }
+}
+
+#cafe-billboard-title {
+  grid-area: title;
+  z-index: 2;
+}
+
+#cafe-billboard-body {
+  grid-area: body;
+  z-index: 2;
 }
 
 #cafe-billboard-small { 
