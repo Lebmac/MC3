@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MC3 Collection & Cafe</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -496,10 +496,17 @@
                   </span>
                 </h2>
                 <!-- Replace the action URL with your server or form endpoint -->
-                <form action="https://formsubmit.co/6bf58d8850739433b787c3f1e163949c" method="post">
-                  <input type="text" name="_honey" style="display: none;">
-                  <input type="hidden" name="_captcha" value="false">
-                  <input type="hidden" name="_next" value="https://lebmac.github.io/MC3/success.html">
+                <form
+                  action="https://formsubmit.co/6bf58d8850739433b787c3f1e163949c"
+                  method="post"
+                >
+                  <input type="text" name="_honey" style="display: none" />
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://lebmac.github.io/MC3/success.html"
+                  />
                   <div>
                     <label for="name">Name</label>
                     <input id="name" name="name" type="text" required />
@@ -510,7 +517,12 @@
                   </div>
                   <div>
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" type="text" required></textarea>
+                    <textarea
+                      id="message"
+                      name="message"
+                      type="text"
+                      required
+                    ></textarea>
                   </div>
                   <button type="submit">Send Message</button>
                 </form>
@@ -547,24 +559,30 @@
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '1937010');
-</script>
-<!-- End MailerLite Universal -->
+    <!-- MailerLite Universal -->
+    <script>
+      (function (w, d, e, u, f, l, n) {
+        (w[f] =
+          w[f] ||
+          function () {
+            (w[f].q = w[f].q || []).push(arguments);
+          }),
+          (l = d.createElement(e)),
+          (l.async = 1),
+          (l.src = u),
+          (n = d.getElementsByTagName(e)[0]),
+          n.parentNode.insertBefore(l, n);
+      })(
+        window,
+        document,
+        "script",
+        "https://assets.mailerlite.com/js/universal.js",
+        "ml"
+      );
+      ml("account", "1937010");
+    </script>
+    <!-- End MailerLite Universal -->
 
     <script src="index.js"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-
