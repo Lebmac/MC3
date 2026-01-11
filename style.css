@@ -487,15 +487,16 @@ nav .center {
   z-index: 2;
 }
 
-#cafe-billboard-small-wrap {
-  width: 40%;
-  max-height: 28vh;
-  align-self: flex-end;
-  display: grid;
+#cafe-gallery {
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
 
-#cafe-billboard-small-wrap>* { 
-  grid-area: 1 / 1;
+#cafe-billboard-small-wrap {
+  width: 100%;
+  height: 100%;
+  display: grid;
 }
 
 #cafe-billboard-small { 
