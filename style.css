@@ -487,6 +487,17 @@ nav .center {
   z-index: 2;
 }
 
+#cafe-billboard-small-wrap {
+  width: 40%;
+  max-height: 28vh;
+  align-self: flex-end;
+  display: grid;
+}
+
+#cafe-billboard-small-wrap>* { 
+  grid-area: 1 / 1;
+}
+
 #cafe-billboard-small { 
   width: 40%;
   max-height: 28vh;
