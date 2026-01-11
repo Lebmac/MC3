@@ -183,7 +183,7 @@
 
       function showImage(newIndex) {
         images[index].classList.remove("active");
-        index = (newIndex + images.length) % images.length;
+        index = newIndex % images.length;
         images[index].classList.add("active");
       }
 
