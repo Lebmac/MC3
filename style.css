@@ -575,7 +575,7 @@ nav .center {
     grid-area: cell-l;
 
     /* height: min(min(39dvw, 60%), 45dvh); */
-    max-height: 38vw;
+    max-height: min(38vw, 304px);
     max-width: min(min(510px, 55vw), 75vh);
     padding-bottom: 2%;
     flex-shrink: 1;
