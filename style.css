@@ -573,8 +573,10 @@ nav .center {
 
   #cafe-gallery {
     grid-area: cell-l;
-    width: 95%;
-    height: min(min(39dvw, 60%), 40dvh);
+
+    /* height: min(min(39dvw, 60%), 45dvh); */
+    max-height: 38vw;
+    max-width: min(min(510px, 55vw), 75vh);
     padding-bottom: 2%;
     flex-shrink: 1;
     z-index: 1;
