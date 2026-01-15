@@ -38,6 +38,41 @@ $("#menu").on("click", util.mobileMenu);
 $(window).on("resize", util.windowResize);
 $(document).on("scroll", util.scrollEvent);
 
+// -------------------------
+// MOBILE NAV MENU FUNCTIONS
+// -------------------------
+
+var navMob = document.getElementById("nav-mob");
+var menu = document.getElementById("nav-mob-menu");
+var title = document.getElementById("nav-mob-title");
+var navBtn = document.getElementById("nav-mob-btn");
+var links = document.getElementsByClassName("nav-mob-link");
+menu.style.display = "none";
+
+function handleNavClick() {
+  if (menu.style.display === "none") {
+    menu.style.display = "flex";
+    navMob.style.backgroundColor = "#503622";
+    title.style.color = "#efefe5";
+    navBtn.style.color = "#efefe5";
+  } else {
+    menu.style.display = "none";
+    navMob.style.backgroundColor = "#efefe5";
+    title.style.color = "#764e2f";
+    navBtn.style.color = "#764e2f";
+  }
+}
+
+window.onload = function() {
+  for (let i=0; i < links.length; i++) {
+    links[i].addEventListener("touchend", () => {
+      setTimeout(() => {
+        handleNavClick();
+      }, 100);  
+    });
+  }
+}
+
 
 // ---------------------
 // DIAGNOSTICS INDICATOR
@@ -67,10 +102,10 @@ $(function() {
 
     $elements.each(function() {
       const el = $(this);
-      const start = parseFloat(el.data("start-pos")); /* || el.offset().top - windowH; */
-      const end = parseFloat(el.data("end-pos")) /* || start + windowH; */
-      const startVal = parseFloat(el.data("start-val")); /* || 0; */
-      const endVal = parseFloat(el.data("end-val")); /* || 0; */
+      const start = parseFloat(el.data("start-pos"));
+      const end = parseFloat(el.data("end-pos"))
+      const startVal = parseFloat(el.data("start-val"));
+      const endVal = parseFloat(el.data("end-val"));
       const options = el.data("options");
       const progress = clamp((scrollY - start) / (end - start), 0, 1);
       const progressSnap = clamp((scrollYSnap - start) / (end - start), 0, 1);

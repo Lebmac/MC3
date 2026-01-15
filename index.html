@@ -53,7 +53,6 @@
         id="home-badges"
         class="fixed"
         data-animate="moveY"
-        data-snap="snap"
         data-start-pos="0"
         data-end-pos="200"
         data-start-val="0"
@@ -62,12 +61,12 @@
         <div class="title-flex">
           <div class="pad-box"></div>
           <div class="brand-flex">
-            <img class="title-brand" src="./assets/logos/ripe.png" />
             <img class="title-brand" src="./assets/logos/mc3-colour.svg" />
             <img
               class="title-brand"
               src="./assets/logos/cafe-racer-colour.svg"
             />
+            <img class="title-brand" src="./assets/logos/ripe.png" />
           </div>
           <div id="title-decal-wrap">
             <iframe
@@ -82,7 +81,7 @@
         </div>
       </div>
 
-      <!-- navbar -->
+      <!-- navbar desktop -->
       <nav
         id="nav"
         class="fixed"
@@ -125,6 +124,32 @@
               <span class="u-nav">Contact</span>
             </span>
           </a>
+        </div>
+      </nav>
+
+      <!-- navbar mobile -->
+      <nav id="nav-mob" class="fixed">
+        <div class="permanent">
+          <h1 id="nav-mob-title">MC3 Collection & Cafe</h1>
+          <button
+            id="nav-mob-btn"
+            class="nav-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            aria-haspopup="menu"
+            onClick="handleNavClick()"
+          >
+            ☰
+          </button>
+        </div>
+        <div id="nav-mob-menu">
+          <a href="#section-home" class="nav-mob-link">Home</a>
+          <a href="#section-about" class="nav-mob-link">About</a>
+          <a href="#section-cafe" class="nav-mob-link">Cafe</a>
+          <a href="#section-service" class="nav-mob-link">Services</a>
+          <a href="#section-merch" class="nav-mob-link">Merch</a>
+          <a href="#section-contact" class="nav-mob-link">Contact</a>
         </div>
       </nav>
 

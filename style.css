@@ -2,6 +2,7 @@
   --card: #efefe5;
   --ink: #222;
   --accent: #d7cfbf;
+  --content: #764e2f;
 }
 
 html, body {
@@ -21,6 +22,7 @@ html, body {
 h1, h2, h3 {
   padding: 0;
   margin: 0;
+  color: var(--content);
 }
 
 .progress-bar {
@@ -124,6 +126,12 @@ nav[data-animate] {
   top: 0px;
 }
 
+/*  position for less than 500px vp width 
+    when nav menu is top of screen */
+#home-badges {
+  top: 10vh;
+}
+
 .bg-secret {
   position: fixed;
   top: 0px;
@@ -153,6 +161,7 @@ nav[data-animate] {
   width: min(150px,30vw);
 }
 
+
 #title-decal-wrap { 
   padding: 1.5vh 6vw;
   height: 75vh;
@@ -164,6 +173,12 @@ nav[data-animate] {
   width: min(65vh, 90vw);
   height: min(65vh, 90vw);
   filter: drop-shadow(15px 15px 0px RGBA(0, 0, 0, 0.4));
+}
+
+@media (max-width: 500px) {
+  .title-flex {
+    flex-direction: column-reverse;
+  }
 }
 
 @media (orientation: landscape) {
@@ -200,7 +215,7 @@ nav[data-animate] {
   top: -1px;
   z-index: 100;
 
-  display: flex;
+  display: none;
   flex-direction: column;
 
   font-family: "Poppins", sans-serif;
@@ -245,12 +260,71 @@ nav .center {
   display: none !important;
 }
 
+#nav-mob {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 10vh;
+  z-index: 999;
+  background-color: var(--card);
+  border-bottom: 1px solid #764e2f;
+
+  & .permanent {
+    width: 100vw;
+    height: 10vh;
+    box-sizing: border-box;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & button {
+    width: auto;
+    padding: 0px;
+    font-size: 4rem;
+    line-height: 4rem;
+    align-content: center;
+    border: none;
+    background: none;
+    color: var(--content);
+  }
+
+  & #nav-mob-menu {
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  & .nav-mob-link {
+    padding: 1.5rem 3vw;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--card);
+  }
+
+  & .nav-mob-link:hover {
+    color: var(--accent);
+  }
+}
+
 @media (min-width: 500px) {
+  #nav-mob {
+    display: none;
+
+  }
+
+  #home-badges {
+    top: 0vh;
+  }
+
   #nav-wrapper {
     overflow: hidden;
   }
 
   #nav {
+    display: flex;
     overflow: hidden;
     flex-direction: row;
   }
@@ -488,7 +562,7 @@ nav .center {
 }
 
 #cafe-gallery {
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%;
 }
