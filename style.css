@@ -9,6 +9,7 @@ html, body {
   margin: 0px;
   padding: 0px;
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
 }
@@ -26,7 +27,7 @@ h1, h2, h3 {
 }
 
 .progress-bar {
-  min-height: calc(6100px + 100ddvh);
+  min-height: calc(6100px + 100dvh);
   background-color: black;
   overflow-x: hidden;
 }
@@ -140,7 +141,7 @@ nav[data-animate] {
 
 .title-flex {
   height: 90dvh !important;
-  width: 100dvw;
+  width: 96svw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,6 +151,7 @@ nav[data-animate] {
 .brand-flex {
   position: relative;
   display: flex;
+  box-sizing: border-box;
   width: 100%;
   justify-content: space-evenly;
   justify-items: center;
@@ -215,7 +217,7 @@ nav[data-animate] {
 
 #nav {
   position: fixed;
-  width: 100dvw;
+  width: 100%;
   top: -1px;
   z-index: 100;
 
@@ -274,7 +276,7 @@ nav .center {
   border-bottom: 1px solid #764e2f;
 
   & .permanent {
-    width: 100dvw;
+    width: 100%;
     height: 10dvh;
     box-sizing: border-box;
     display: flex;
@@ -366,7 +368,7 @@ nav .center {
    About and gallery styles
    ======================== */
 #about {
-  width: 100dvw;
+  width: 100%;
   height: 0dvh;
   bottom: 0px;
   overflow: hidden;
@@ -385,7 +387,7 @@ nav .center {
 
 .column {
   position: relative;
-  width: 100dvw;
+  width: 100vw;
 }
 
 .hide-narrow {
@@ -474,7 +476,7 @@ nav .center {
    ======================== */
 
 #cafe {
-  width: 100dvw;
+  width: 100%;
   height: 90dvh;
   bottom: 0px;
   overflow: hidden;
@@ -634,7 +636,7 @@ nav .center {
    ========================= */
 
 #services {
-  width: 100dvw;
+  width: 100%;
   height: 90dvh;
   bottom: 0px;
   overflow: hidden;
@@ -734,7 +736,7 @@ nav .center {
    ========================== */
 
 #merch {
-  width: 100dvw;
+  width: 100%;
   height: 96dvh;
   padding: 3dvh 0px;
   bottom: 0px;
@@ -866,7 +868,7 @@ nav .center {
    ========================= */
 
 #contact {
-  width: 100dvw;
+  width: 100%;
   height: 90dvh;
   padding: 0dvh 0px;
   bottom: 0px;
@@ -875,7 +877,7 @@ nav .center {
 }
 
 #contact-wipe {
-  width: 100dvw;
+  width: 100%;
   height: 90dvh;
   padding: 0dvh 0px;
   bottom: 0px;
@@ -902,7 +904,7 @@ nav .center {
   max-height: 100%; /* larger than box */
   box-sizing: border-box;
   overflow: hidden;
-  width: 100dvw;
+  width: 100%;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: repeat(3, 1fr);
@@ -1034,7 +1036,7 @@ button:hover {
    ===================== */
 
 footer {
-  width: 100dvw;
+  width: 100%;
   height: 40dvh;
   margin: 0px;
   padding: 0px;
