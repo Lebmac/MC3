@@ -66,7 +66,7 @@ function handleNavClick() {
 
 window.onload = function() {
   for (let i=0; i < links.length; i++) {
-    links[i].addEventListener("touchend", () => {
+    links[i].addEventListener("pointerup", () => {
       setTimeout(() => {
         handleNavClick();
       }, 100);  
