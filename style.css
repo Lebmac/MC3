@@ -1098,3 +1098,9 @@ footer > div {
   height: 1200px;
   top: 4900px;
 }
+
+@media (max-width: 500px) {
+  #section-cafe {
+    top: 1800px;
+  }
+}
