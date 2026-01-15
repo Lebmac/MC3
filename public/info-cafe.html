@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MC3 Opening Hours</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MC3 Opening Hours",
+        "alternateName": "MC3 Motorcycle Collection & Café Opening Hours",
+        "url": "https://mc3.nz/open-hours"
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Road+Rage&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/images/classic-bike-monotone.svg"
+    />
+    <style>
+      :root {
+        font-family: "Poppins", sans-serif;
+        color: #764e2f;
+        overflow: hidden;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        align-items: flex-end; /* Align content to bottom */
+        justify-content: center; /* Optional: center horizontally */
+      }
+      h2,
+      h3 {
+        padding: 0;
+        margin: 0;
+      }
+      .grid {
+        width: 100%;
+        aspect-ratio: 9 / 5;
+        height: max-content;
+        display: grid;
+        grid-template: "all" 1fr / 100%;
+      }
+      .bg {
+        width: 100%;
+        aspect-ratio: 1.16;
+        grid-area: all;
+      }
+      .overlay-title {
+        box-sizing: border-box;
+        width: 100%;
+        height: 20%;
+        align-self: flex-start;
+        grid-area: all;
+        padding: 6% 11% 3% 11%;
+        display: flex;
+        justify-content: center;
+      }
+      .overlay-content {
+        box-sizing: border-box;
+        width: 100%;
+        height: 80%;
+        align-self: flex-end;
+        grid-area: all;
+        padding: 7% 11%;
+        display: flex;
+        flex-direction: column;
+      }
+      h2 {
+        font-size: 5cqw;
+      }
+      h3 {
+        font-size: 4.5cqw;
+      }
+      p {
+        font-size: 4cqw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <img
+        src="../assets/graphics/cafe-side-menu.svg"
+        class="bg"
+        alt="MC3 Collection"
+      />
+      <div class="overlay-title">
+        <h2>Opening hours</h2>
+      </div>
+      <div class="overlay-content">
+        <h3>Cafe & Collection</h3>
+        <p>
+          Weekdays - 7:00am-2:30pm<br />
+          Weekend - 9:00am-4:00pm
+        </p>
+        <h3>Kitchen</h3>
+        <p>Weekdays - 8:00am-1:30pm</p>
+      </div>
+    </div>
+  </body>
+</html>
