@@ -492,144 +492,86 @@ nav .center {
   transform: translate(-50%, -50%);
 }
 
-.cafe-flex {
-  height: 90dvh !important;
-  width: 100dvw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-items: flex-start;
-}
-
-.billboard-small-flex {
-  position: relative;
-  display: flex;
+#cafe-container {
+  min-height: 90dvh;
   width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  padding: 3dvw;
+  column-gap: 8dvw;
+  row-gap: 4dvh;
+  align-items: flex-end;
   justify-content: center;
   justify-items: center;
-  gap: 10dvw;
-  padding: 2dvh;
-  filter: drop-shadow(6px 6px 0px RGBA(0, 0, 0, 0.5));
+  grid-template: 
+  "logo   cell-s" 1fr
+  "cell-l cell-l" auto / 1fr 1fr;
 }
 
-.cafe-brand {
-  width: 40%;
-  align-self: flex-start;
-  max-height: 28dvh;
+#logo-cell {
+  grid-area: logo;
 }
 
-#cafe-billboard-wrap { 
-  position: relative;
-  padding: 1dvh 1dvw;
-  width: 90%;
-  display: grid;
+.cafe-logo {
+  grid-area: logo;
+  width: min(230px, 100%);
+  max-height: 30vh;
+  flex-shrink: 1;
 }
 
-#cafe-billboard-wrap>* { 
-  grid-area: 1 / 1;
+#small-cell {
+  grid-area: cell-s;
 }
 
-#cafe-billboard { 
+#cafe-small-card {
+  grid-area: cell-s;
+  width: min(230px, 100%);
+  max-height: 40vh;
+  flex-shrink: 1;
+}
+
+#large-cell {
+  grid-area: cell-l;
+}
+
+#cafe-large-card {
+  grid-area: cell-l;
   width: 100%;
-  filter: drop-shadow(15px 15px 0px RGBA(0, 0, 0, 0.4));
-  z-index: 1;
-}
-
-#cafe-billboard-overlay {
-  --base-px: 5.5dvw;
-  --wide-px: max(0px, calc(25dvw - 250px));
-
+  flex-shrink: 1;
   z-index: 2;
-  display: grid;
-  padding: 0px calc(var(--base-px) + var(--wide-px));
-  grid-template-rows: 4fr 1.5fr 9fr 0.75fr;
-  gap: 2rem;
-  grid-template-areas: 
-  "top"
-  "title"
-  "body"
-  "bottom";
-}
-
-@media (orientation: landscape) {
-  #cafe-billboard-overlay {
-    --base-px: 3.5dvw;
-  }
-}
-
-#cafe-billboard-title {
-  grid-area: title;
-  z-index: 2;
-}
-
-#cafe-billboard-body {
-  grid-area: body;
-  z-index: 2;
+  pointer-events: none;
 }
 
 #cafe-gallery {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-#cafe-billboard-small-wrap {
-  width: 100%;
-  height: 100%;
-  display: grid;
-}
-
-#cafe-billboard-small { 
-  width: 40%;
-  max-height: 28dvh;
-  align-self: flex-end;
-  filter: drop-shadow(15px 15px 0px RGBA(0, 0, 0, 0.4));
+  grid-area: cell-l;
+  width: 95%;
+  height: 60%;
+  padding-bottom: 2%;
+  flex-shrink: 1;
+  z-index: 1;
 }
 
 
 @media (orientation: landscape) {
-  .cafe-flex {
-    height: 90dvh;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 3dvw;
+  #cafe-container {
+    grid-template: 
+    "logo cell-l" 2fr
+    "cell-s cell-l" auto / auto auto;
   }
 
-  #cafe-billboard-wrap { 
-    min-width: 56dvw;
-    
-    padding: 0dvh;
-    padding-right: 3dvw;
+  #cafe-small-card {
+    width: min(305px, 32dvw);
+    max-height: 40vh;
+    flex-shrink: 1;
   }
 
-  .billboard-small-flex {
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    max-width: 31dvw;
-    gap: 10dvh;
-    align-items: center;
-    padding: 0px;
-    padding-left: 3dvw;
-  }
-
-  #cafe-billboard-small {
-    width: 100%;
-    max-height: 40%;
-    align-self: flex-end;
-  }
-
-  .cafe-brand {
-    width: 100%;
-    max-height: 34dvh;
-    align-self: flex-end;
-  }
-
-  #cafe-billboard { 
-    max-height: 81dvh !important;
+  #cafe-large-card {
+    width: min(510px, 55vw);
+    max-height: 80vh;
+    flex-shrink: 1;
   }
 }
+
 
 /* =========================
    Parts menu section styles
