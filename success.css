@@ -29,16 +29,16 @@ html, body {
 
 .bg-img {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   object-fit: cover;
   bottom: 0px;
 }
 
 #home-bg {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   overflow: hidden;
   top: 0px;
 }
@@ -47,8 +47,8 @@ html, body {
   position: relative;
   background-color: var(--card);
   box-sizing: border-box;
-  transform: translate(25vw, 25vh);
-  width: 50vw;
+  transform: translate(25dvw, 25dvh);
+  width: 50dvw;
   border: 1px solid #764e2f;
   padding: 4rem;
   display: flex;

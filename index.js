@@ -186,7 +186,7 @@ function moveY(el, progress, startVal=0, endVal=100, options="") {
   const fctBoundValue = startVal + progress * (endVal - startVal);
   const appBoundValue = clamp(fctBoundValue, lowerAppBound, upperAppBound);
 
-  el.css("--translateY", appBoundValue + 'vh'); 
+  el.css("--translateY", appBoundValue + 'dvh'); 
 }
 
 function moveX(el, progress, startVal=0, endVal=100, options="") {
@@ -195,7 +195,7 @@ function moveX(el, progress, startVal=0, endVal=100, options="") {
   const fctBoundValue = startVal + progress * (endVal - startVal);
   const appBoundValue = clamp(fctBoundValue, lowerAppBound, upperAppBound);
 
-  el.css("--translateX", appBoundValue + 'vw');
+  el.css("--translateX", appBoundValue + 'dvw');
 }
 
 function rotate(el, progress, startVal=0, endVal=360, options="") {
@@ -222,7 +222,7 @@ function height(el, progress, startVal=0, endVal=100, options="") {
   const fctBoundValue = Math.max((startVal + progress * (endVal - startVal)), 0);
   const appBoundValue = clamp(fctBoundValue, lowerAppBound, upperAppBound);
 
-  el.css("--height", appBoundValue + 'vh');
+  el.css("--height", appBoundValue + 'dvh');
 }
 
 function visible(el, progress, startVal=0, endVal=1, options="") {

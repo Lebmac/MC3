@@ -26,7 +26,7 @@ h1, h2, h3 {
 }
 
 .progress-bar {
-  min-height: calc(6100px + 100dvh);
+  min-height: calc(6100px + 100ddvh);
   background-color: black;
   overflow-x: hidden;
 }
@@ -44,7 +44,7 @@ h1, h2, h3 {
 }
 
 .panel {
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -100,7 +100,7 @@ nav[data-animate] {
 }
 
 [data-animate="height"] {
-  height: var(--height, 100vh) !important;
+  height: var(--height, 100dvh) !important;
 }
 
 .fixed {
@@ -113,15 +113,15 @@ nav[data-animate] {
 
 .bg-img {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   object-fit: cover;
   bottom: 0px;
 }
 
 #home-bg {
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   overflow: hidden;
   top: 0px;
 }
@@ -129,18 +129,18 @@ nav[data-animate] {
 /*  position for less than 500px vp width 
     when nav menu is top of screen */
 #home-badges {
-  top: 10vh;
+  top: 10dvh;
 }
 
 .bg-secret {
   position: fixed;
   top: 0px;
-  width: 100vw;
+  width: 100dvw;
 }
 
 .title-flex {
-  height: 90vh !important;
-  width: 100vw;
+  height: 90dvh !important;
+  width: 100dvw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -153,25 +153,25 @@ nav[data-animate] {
   width: 100%;
   justify-content: space-evenly;
   justify-items: center;
-  padding: 2vh;
+  padding: 2dvh;
   filter: drop-shadow(6px 6px 0px RGBA(0, 0, 0, 0.5));
 }
 
 .title-brand {
-  width: min(150px,30vw);
+  width: min(150px,30dvw);
 }
 
 
 #title-decal-wrap { 
-  padding: 1.5vh 6vw;
-  height: 75vh;
+  padding: 1.5dvh 6dvw;
+  height: 75dvh;
   display: flex;
   align-items: center;
 }
 
 #title-decal { 
-  width: min(65vh, 90vw);
-  height: min(65vh, 90vw);
+  width: min(65dvh, 90dvw);
+  height: min(65dvh, 90dvw);
   filter: drop-shadow(15px 15px 0px RGBA(0, 0, 0, 0.4));
 }
 
@@ -183,7 +183,7 @@ nav[data-animate] {
 
 @media (orientation: landscape) {
   .title-flex {
-    height: 90vh;
+    height: 90dvh;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -196,11 +196,11 @@ nav[data-animate] {
     justify-content: space-around !important;
     justify-items: center;
     align-items: center;
-    padding: 3vh;
+    padding: 3dvh;
   }
 
   .title-brand {
-    width: 20vw;
+    width: 20dvw;
     max-width: 200px;
   }
 }
@@ -211,7 +211,7 @@ nav[data-animate] {
 
 #nav {
   position: fixed;
-  width: 100vw;
+  width: 100dvw;
   top: -1px;
   z-index: 100;
 
@@ -219,7 +219,7 @@ nav[data-animate] {
   flex-direction: column;
 
   font-family: "Poppins", sans-serif;
-  height: 10vh;
+  height: 10dvh;
   overflow: hidden;
   
   background-color: #efefe5;
@@ -234,13 +234,13 @@ nav[data-animate] {
 
 .nav {
   display: flex;
-  height: 10vh;
-  line-height: 10vh;
+  height: 10dvh;
+  line-height: 10dvh;
   flex-grow: 1;
 }
 
 .nav-link {
-  padding: 0rem 3vw;
+  padding: 0rem 3dvw;
   text-transform: uppercase;
   text-align: center;
 }
@@ -253,7 +253,7 @@ nav a:link, nav a:visited, nav a:active {
 nav .center {
   display: flex;
   flex-direction: column;
-  height: 10vh;
+  height: 10dvh;
 }
 
 .nav-hide {
@@ -264,14 +264,14 @@ nav .center {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 10vh;
+  min-height: 10dvh;
   z-index: 999;
   background-color: var(--card);
   border-bottom: 1px solid #764e2f;
 
   & .permanent {
-    width: 100vw;
-    height: 10vh;
+    width: 100dvw;
+    height: 10dvh;
     box-sizing: border-box;
     display: flex;
     padding: 1rem;
@@ -297,7 +297,7 @@ nav .center {
   }
 
   & .nav-mob-link {
-    padding: 1.5rem 3vw;
+    padding: 1.5rem 3dvw;
     text-transform: uppercase;
     text-align: center;
     font-size: 2rem;
@@ -316,7 +316,7 @@ nav .center {
   }
 
   #home-badges {
-    top: 0vh;
+    top: 0dvh;
   }
 
   #nav-wrapper {
@@ -362,8 +362,8 @@ nav .center {
    About and gallery styles
    ======================== */
 #about {
-  width: 100vw;
-  height: 0vh;
+  width: 100dvw;
+  height: 0dvh;
   bottom: 0px;
   overflow: hidden;
   
@@ -381,7 +381,7 @@ nav .center {
 
 .column {
   position: relative;
-  width: 100vw;
+  width: 100dvw;
 }
 
 .hide-narrow {
@@ -391,7 +391,7 @@ nav .center {
 .about-sticky {
   position: absolute;
   bottom: 0px;
-  height: 90vh;
+  height: 90dvh;
   width: 100%;
 
   overflow: hidden;
@@ -406,7 +406,7 @@ nav .center {
 .about-scroll {
   position: absolute;
   bottom: 0px;
-  height: 90vh;
+  height: 90dvh;
   width: 100%;
 
   overflow-y: hidden;
@@ -457,7 +457,7 @@ nav .center {
 
 @media (min-width: 650px) {
   .column {
-    width: 50vw;
+    width: 50dvw;
   }
 
   .hide-narrow {
@@ -470,8 +470,8 @@ nav .center {
    ======================== */
 
 #cafe {
-  width: 100vw;
-  height: 90vh;
+  width: 100dvw;
+  height: 90dvh;
   bottom: 0px;
   overflow: hidden;
   z-index: 10;
@@ -479,16 +479,16 @@ nav .center {
 
 #cafe-bg {
   position: absolute;
-  left: 50vw;
-  top: 50vh;
+  left: 50dvw;
+  top: 50dvh;
   min-width: 200%;
   min-height: 200%;
   transform: translate(-50%, -50%);
 }
 
 .cafe-flex {
-  height: 90vh !important;
-  width: 100vw;
+  height: 90dvh !important;
+  width: 100dvw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -501,20 +501,20 @@ nav .center {
   width: 100%;
   justify-content: center;
   justify-items: center;
-  gap: 10vw;
-  padding: 2vh;
+  gap: 10dvw;
+  padding: 2dvh;
   filter: drop-shadow(6px 6px 0px RGBA(0, 0, 0, 0.5));
 }
 
 .cafe-brand {
   width: 40%;
   align-self: flex-start;
-  max-height: 28vh;
+  max-height: 28dvh;
 }
 
 #cafe-billboard-wrap { 
   position: relative;
-  padding: 1vh 1vw;
+  padding: 1dvh 1dvw;
   width: 90%;
   display: grid;
 }
@@ -530,8 +530,8 @@ nav .center {
 }
 
 #cafe-billboard-overlay {
-  --base-px: 5.5vw;
-  --wide-px: max(0px, calc(25vw - 250px));
+  --base-px: 5.5dvw;
+  --wide-px: max(0px, calc(25dvw - 250px));
 
   z-index: 2;
   display: grid;
@@ -547,7 +547,7 @@ nav .center {
 
 @media (orientation: landscape) {
   #cafe-billboard-overlay {
-    --base-px: 3.5vw;
+    --base-px: 3.5dvw;
   }
 }
 
@@ -575,7 +575,7 @@ nav .center {
 
 #cafe-billboard-small { 
   width: 40%;
-  max-height: 28vh;
+  max-height: 28dvh;
   align-self: flex-end;
   filter: drop-shadow(15px 15px 0px RGBA(0, 0, 0, 0.4));
 }
@@ -583,29 +583,29 @@ nav .center {
 
 @media (orientation: landscape) {
   .cafe-flex {
-    height: 90vh;
+    height: 90dvh;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 3vw;
+    gap: 3dvw;
   }
 
   #cafe-billboard-wrap { 
-    min-width: 56vw;
+    min-width: 56dvw;
     
-    padding: 0vh;
-    padding-right: 3vw;
+    padding: 0dvh;
+    padding-right: 3dvw;
   }
 
   .billboard-small-flex {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    max-width: 31vw;
-    gap: 10vh;
+    max-width: 31dvw;
+    gap: 10dvh;
     align-items: center;
     padding: 0px;
-    padding-left: 3vw;
+    padding-left: 3dvw;
   }
 
   #cafe-billboard-small {
@@ -616,12 +616,12 @@ nav .center {
 
   .cafe-brand {
     width: 100%;
-    max-height: 34vh;
+    max-height: 34dvh;
     align-self: flex-end;
   }
 
   #cafe-billboard { 
-    max-height: 81vh !important;
+    max-height: 81dvh !important;
   }
 }
 
@@ -630,8 +630,8 @@ nav .center {
    ========================= */
 
 #services {
-  width: 100vw;
-  height: 90vh;
+  width: 100dvw;
+  height: 90dvh;
   bottom: 0px;
   overflow: hidden;
   z-index: 20;
@@ -644,7 +644,7 @@ nav .center {
 .parts-scroll {
   position: absolute;
   bottom: 0px;
-  height: 90vh;
+  height: 90dvh;
   width: 100%;
 
   overflow-y: hidden;
@@ -730,9 +730,9 @@ nav .center {
    ========================== */
 
 #merch {
-  width: 100vw;
-  height: 96vh;
-  padding: 3vh 0px;
+  width: 100dvw;
+  height: 96dvh;
+  padding: 3dvh 0px;
   bottom: 0px;
   overflow: hidden;
   z-index: 30;
@@ -825,15 +825,15 @@ nav .center {
 .merch-col-two {
   padding: 2rem;
   display: grid;
-  grid-template-rows: repeat(7, 8vw);
-  grid-template-columns: repeat(10, 8vw);
+  grid-template-rows: repeat(7, 8dvw);
+  grid-template-columns: repeat(10, 8dvw);
   justify-content: center;
 }
 
 .merch-chain {
   /* display: none; */
   position: absolute;
-  bottom: clamp(-30vh, calc(-60vh + calc(17vh * calc(0.8vh / 1vw))), -25vh);
+  bottom: clamp(-30dvh, calc(-60dvh + calc(17dvh * calc(0.8dvh / 1dvw))), -25dvh);
   transform: rotate(15deg) scale(1.2);
   z-index: -1;
 }
@@ -845,9 +845,9 @@ nav .center {
   }
     
   .merch-col-two {  
-    padding: 2rem 1rem 1rem min(4rem,5vh);
-    grid-template-rows: repeat(7, min(5.5vw, 10vh));
-    grid-template-columns: repeat(10, min(5.5vw, 10vh));
+    padding: 2rem 1rem 1rem min(4rem,5dvh);
+    grid-template-rows: repeat(7, min(5.5dvw, 10dvh));
+    grid-template-columns: repeat(10, min(5.5dvw, 10dvh));
     justify-content: center;
 
   }
@@ -862,18 +862,18 @@ nav .center {
    ========================= */
 
 #contact {
-  width: 100vw;
-  height: 90vh;
-  padding: 0vh 0px;
+  width: 100dvw;
+  height: 90dvh;
+  padding: 0dvh 0px;
   bottom: 0px;
   overflow: hidden;
   z-index: 40;
 }
 
 #contact-wipe {
-  width: 100vw;
-  height: 90vh;
-  padding: 0vh 0px;
+  width: 100dvw;
+  height: 90dvh;
+  padding: 0dvh 0px;
   bottom: 0px;
   overflow: hidden;
 }
@@ -888,7 +888,7 @@ nav .center {
 
 .contact-scroll {
   position: absolute;
-  height: 90vh;
+  height: 90dvh;
   width: 100%;
 
   overflow-y: hidden;
@@ -898,7 +898,7 @@ nav .center {
   max-height: 100%; /* larger than box */
   box-sizing: border-box;
   overflow: hidden;
-  width: 100vw;
+  width: 100dvw;
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: repeat(3, 1fr);
@@ -1030,8 +1030,8 @@ button:hover {
    ===================== */
 
 footer {
-  width: 100vw;
-  height: 40vh;
+  width: 100dvw;
+  height: 40dvh;
   margin: 0px;
   padding: 0px;
   z-index: 100;
