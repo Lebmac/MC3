@@ -570,6 +570,15 @@ nav .center {
     max-height: 80vh;
     flex-shrink: 1;
   }
+
+  #cafe-gallery {
+    grid-area: cell-l;
+    width: 95%;
+    height: min(min(39dvw, 60%), 40dvh);
+    padding-bottom: 2%;
+    flex-shrink: 1;
+    z-index: 1;
+  }
 }
 
 
