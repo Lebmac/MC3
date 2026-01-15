@@ -115,14 +115,14 @@ nav[data-animate] {
 .bg-img {
   position: absolute;
   width: 100dvw;
-  height: 100dvh;
+  height: 100vh;
   object-fit: cover;
   bottom: 0px;
 }
 
 #home-bg {
   width: 100dvw;
-  height: 100dvh;
+  height: 100vh;
   overflow: hidden;
   top: 0px;
 }
