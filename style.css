@@ -521,6 +521,19 @@ nav .center {
 
 #small-cell {
   grid-area: cell-s;
+  box-sizing: border-box;
+  width: min(88%, 205px);
+  height: clamp(135px, 20vh, 25vw);
+  
+  & h3 {
+    padding: 0.5rem 1rem 0.2rem 0.5rem;
+    margin: 0cqmax 0.3rem;
+  }
+
+  & p {
+    padding: 0 1rem 0 0.5rem;
+    margin: 0rem 0.3rem;
+  }
 }
 
 #cafe-small-card {
@@ -573,13 +586,16 @@ nav .center {
 
   #cafe-gallery {
     grid-area: cell-l;
-
-    /* height: min(min(39dvw, 60%), 45dvh); */
     max-height: min(38vw, 304px);
     max-width: min(min(510px, 55vw), 75vh);
     padding-bottom: 2%;
     flex-shrink: 1;
     z-index: 1;
+  }
+
+  #small-cell {
+    width: min(41vh,88%);
+    height: min(29vh,min(20vw,190px));
   }
 }
 
