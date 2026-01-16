@@ -1,4 +1,5 @@
 :root {
+  font-display: swap;
   --card: #efefe5;
   --ink: #222;
   --accent: #d7cfbf;
@@ -1092,24 +1093,7 @@ footer > img {
    Modals
    ====== */
 
-#cafe-gallery-modal-bg {
-  position: fixed;
-  display: none;
-  top: 0;
-  box-sizing: border-box;
-  height: 100dvh;
-  width: 100dvw;
-  padding: 2% 10%;
-  background-color: RGBA(0, 0, 0, 0.4);
-  z-index: 900;
-
-  & * {
-    width: 100%;
-    height:100%;
-  }
-}
-
-#about-gallery-modal-bg {
+.modal-bg {
   position: fixed;
   display: none;
   top: 0;
