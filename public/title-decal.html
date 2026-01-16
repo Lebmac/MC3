@@ -71,6 +71,9 @@
             height="200"
           />
         </mask>
+        <mask id="mask-mc3">
+          <image href="../assets/logos/mc3-bw.svg" width="200" />
+        </mask>
       </defs>
 
       <g>
@@ -83,6 +86,7 @@
           stroke-width="1"
         />
         <circle
+          id="centreGraphic"
           cx="100"
           cy="100"
           r="100"
@@ -121,12 +125,19 @@
         "the legends ride again",
         "Until we get to MC3...",
       ];
+      let graphics = [
+        "url(#mask-bike)",
+        "url(#mask-mc3)",
+        "url(#mask-mc3)",
+        "url(#mask-bike)",
+      ];
       let current = 0;
 
       function animateAndChange() {
         const group = document.getElementById("rotatingGroup");
         const textPath1 = document.getElementById("circularText1");
         const textPath2 = document.getElementById("circularText2");
+        const imagePath = document.getElementById("centreGraphic");
 
         // Trigger rotation animation
         group.classList.add("rotate");
@@ -135,6 +146,7 @@
         current = (current + 1) % Math.min(messages1.length, messages2.length);
         textPath1.textContent = messages1[current];
         textPath2.textContent = messages2[current];
+        imagePath.setAttribute("mask", graphics[current]);
       }
 
       document
@@ -145,7 +157,7 @@
 
       setInterval(() => {
         animateAndChange();
-      }, 2000);
+      }, 3000);
     </script>
   </body>
 </html>
