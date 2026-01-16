@@ -74,6 +74,41 @@ window.onload = function() {
   }
 }
 
+var aboutModal = document.getElementById("about-gallery-modal-bg");
+var cafeModal = document.getElementById("cafe-gallery-modal-bg");
+
+window.addEventListener("message", (event) => {
+  if (event.data?.type === "gallery-about-click") {
+    handleAboutGalleryClick(); 
+  } else if (event.data?.type === "gallery-cafe-click") {
+    handleCafeGalleryClick(); 
+  }
+});
+
+document.querySelectorAll(".modal-bg").forEach((modal) => {
+  modal.addEventListener("click", (e) => {
+    closeModal();
+  });
+});
+
+function handleAboutGalleryClick() {
+  console.log(aboutModal.style.display);
+  if (aboutModal.style.display == "none" || aboutModal.style.display == "") {
+    aboutModal.style.display = "block";
+  }
+}
+
+function handleCafeGalleryClick() {
+  if (cafeModal.style.display == "none" || cafeModal.style.display == "") {
+    cafeModal.style.display = "block";
+  }
+}
+
+function closeModal() {
+  aboutModal.style.display = "none";
+  cafeModal.style.display = "none";
+
+}
 
 // ---------------------
 // DIAGNOSTICS INDICATOR

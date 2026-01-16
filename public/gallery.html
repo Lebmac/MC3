@@ -41,6 +41,10 @@
         transition: opacity 1s ease-in-out;
       }
 
+      .full-size {
+        object-fit: contain !important;
+      }
+
       .gallery > img.active {
         opacity: 1;
       }
@@ -175,6 +179,9 @@
     </div>
 
     <script>
+      const params = new URLSearchParams(window.location.search);
+      const fs = params.get("fullscreen");
+
       const images = document.querySelectorAll(".gallery>img");
       const prev = document.getElementById("prev");
       const next = document.getElementById("next");
@@ -182,9 +189,17 @@
       let interval;
 
       function showImage(newIndex) {
-        //console.log("album:", newIndex, index, images[index]);
+        if (newIndex < 0) {
+          newIndex = images.length - 1;
+        }
+
         images[index].classList.remove("active");
         index = newIndex % images.length;
+
+        if (fs == "true") {
+          images[index].classList.add("full-size");
+        }
+
         images[index].classList.add("active");
       }
 
@@ -198,21 +213,28 @@
 
       function startCycle() {
         interval = setInterval(nextImage, 4000);
+        if (fs) clearInterval(interval);
       }
 
       function resetCycle() {
         clearInterval(interval);
         startCycle();
+        if (fs) clearInterval(interval);
       }
 
-      next.addEventListener("click", () => {
+      next.addEventListener("pointerup", () => {
         nextImage();
         resetCycle();
       });
 
-      prev.addEventListener("click", () => {
+      prev.addEventListener("pointerup", () => {
         prevImage();
         resetCycle();
+      });
+
+      document.addEventListener("pointerup", () => {
+        if (fs == "true") return;
+        window.parent.postMessage({ type: "gallery-about-click" }, "*");
       });
 
       startCycle();

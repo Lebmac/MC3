@@ -41,6 +41,10 @@
         transition: opacity 1s ease-in-out;
       }
 
+      .full-size {
+        object-fit: contain !important;
+      }
+
       .gallery > img.active {
         opacity: 1;
       }
@@ -75,6 +79,11 @@
   <body>
     <div class="gallery">
       <img
+        src="../assets/images/gallery-cafe/Menu Design 20260116-01.jpg"
+        class="active"
+        alt="Toasted Sandwich"
+      />
+      <img
         src="../assets/images/gallery-cafe/IMG_20251028_133832.jpg"
         class="active"
         alt="Toasted Sandwich"
@@ -105,6 +114,9 @@
     </div>
 
     <script>
+      const params = new URLSearchParams(window.location.search);
+      const fs = params.get("fullscreen");
+
       const images = document.querySelectorAll(".gallery>img");
       const prev = document.getElementById("prev");
       const next = document.getElementById("next");
@@ -112,9 +124,17 @@
       let interval;
 
       function showImage(newIndex) {
-        //console.log("album:", newIndex, index, images[index]);
+        if (newIndex < 0) {
+          newIndex = images.length - 1;
+        }
+
         images[index].classList.remove("active");
         index = newIndex % images.length;
+
+        if (fs == "true") {
+          images[index].classList.add("full-size");
+        }
+
         images[index].classList.add("active");
       }
 
@@ -128,24 +148,33 @@
 
       function startCycle() {
         interval = setInterval(nextImage, 4000);
+        if (fs) clearInterval(interval);
       }
 
       function resetCycle() {
         clearInterval(interval);
         startCycle();
+        if (fs) clearInterval(interval);
       }
 
-      next.addEventListener("click", () => {
+      next.addEventListener("pointerup", (e) => {
+        e.stopImmediatePropagation();
         nextImage();
         resetCycle();
       });
 
-      prev.addEventListener("click", () => {
+      prev.addEventListener("pointerup", (e) => {
+        e.stopImmediatePropagation();
         prevImage();
         resetCycle();
       });
 
-      startCycle();
+      document.addEventListener("pointerup", () => {
+        if (fs == "true") return;
+        window.parent.postMessage({ type: "gallery-cafe-click" }, "*");
+      });
+
+      if (!fs) startCycle();
     </script>
   </body>
 </html>
