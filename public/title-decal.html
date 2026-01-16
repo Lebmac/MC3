@@ -31,6 +31,10 @@
         animation: spin 0.4s ease 1;
       }
 
+      .fade {
+        animation: fade 0.4s ease 1;
+      }
+
       #rotatingGroup {
         transform: translate(-50%, -50%);
       }
@@ -51,6 +55,15 @@
         }
         100% {
           transform: rotate(360deg) translate(-50%, -50%);
+        }
+      }
+
+      @keyframes fade {
+        0% {
+          opacity: 0%;
+        }
+        100% {
+          opacity: 100%;
         }
       }
     </style>
@@ -128,8 +141,8 @@
       let graphics = [
         "url(#mask-bike)",
         "url(#mask-mc3)",
-        "url(#mask-mc3)",
         "url(#mask-bike)",
+        "url(#mask-mc3)",
       ];
       let current = 0;
 
@@ -137,22 +150,29 @@
         const group = document.getElementById("rotatingGroup");
         const textPath1 = document.getElementById("circularText1");
         const textPath2 = document.getElementById("circularText2");
-        const imagePath = document.getElementById("centreGraphic");
+        const image = document.getElementById("centreGraphic");
 
         // Trigger rotation animation
         group.classList.add("rotate");
+        image.classList.add("fade");
 
         // Change text content
         current = (current + 1) % Math.min(messages1.length, messages2.length);
         textPath1.textContent = messages1[current];
         textPath2.textContent = messages2[current];
-        imagePath.setAttribute("mask", graphics[current]);
+        image.setAttribute("mask", graphics[current]);
       }
 
       document
         .getElementById("rotatingGroup")
         .addEventListener("animationend", function () {
           this.classList.remove("rotate");
+        });
+
+      document
+        .getElementById("centreGraphic")
+        .addEventListener("animationend", function () {
+          this.classList.remove("fade");
         });
 
       setInterval(() => {
