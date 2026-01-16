@@ -152,11 +152,9 @@
         const textPath2 = document.getElementById("circularText2");
         const image = document.getElementById("centreGraphic");
 
-        // Trigger rotation animation
         group.classList.add("rotate");
         image.classList.add("fade");
 
-        // Change text content
         current = (current + 1) % Math.min(messages1.length, messages2.length);
         textPath1.textContent = messages1[current];
         textPath2.textContent = messages2[current];
