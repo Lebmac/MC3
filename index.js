@@ -80,8 +80,8 @@ window.onload = function() {
 // ---------------------
 
 // Update CSS variable on scroll
-/* 
-window.addEventListener('scroll', () => {
+
+/* window.addEventListener('scroll', () => {
   const scrollY = window.scrollY || window.pageYOffset;
   document.documentElement.style.setProperty('--scroll-y', scrollY);
   document.getElementById('scrollValue').textContent = Math.round(scrollY);
