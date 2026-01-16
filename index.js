@@ -75,13 +75,15 @@ window.onload = function() {
 }
 
 var aboutModal = document.getElementById("about-gallery-modal-bg");
+var aboutModalGal = document.getElementById("about-gallery-modal");
 var cafeModal = document.getElementById("cafe-gallery-modal-bg");
+var cafeModalGal = document.getElementById("cafe-gallery-modal");
 
 window.addEventListener("message", (event) => {
   if (event.data?.type === "gallery-about-click") {
-    handleAboutGalleryClick(); 
+    handleAboutGalleryClick(event.data?.index || 0); 
   } else if (event.data?.type === "gallery-cafe-click") {
-    handleCafeGalleryClick(); 
+    handleCafeGalleryClick(event.data?.index || 0); 
   }
 });
 
@@ -91,14 +93,15 @@ document.querySelectorAll(".modal-bg").forEach((modal) => {
   });
 });
 
-function handleAboutGalleryClick() {
-  console.log(aboutModal.style.display);
+function handleAboutGalleryClick(index) {
+  aboutModalGal.src = `./public/gallery.html?fullscreen=true&index=${index}`;
   if (aboutModal.style.display == "none" || aboutModal.style.display == "") {
     aboutModal.style.display = "block";
   }
 }
 
-function handleCafeGalleryClick() {
+function handleCafeGalleryClick(index) {
+  cafeModalGal.src = `./public/gallery-cafe.html?fullscreen=true&index=${index}`;
   if (cafeModal.style.display == "none" || cafeModal.style.display == "") {
     cafeModal.style.display = "block";
   }

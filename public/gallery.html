@@ -80,7 +80,6 @@
     <div class="gallery">
       <img
         src="../assets/images/gallery-about/20260111_MC3_collection2.v1.webp"
-        class="active"
         loading="lazy"
         alt="MC3 Collection"
       />
@@ -203,11 +202,12 @@
     <script>
       const params = new URLSearchParams(window.location.search);
       const fs = params.get("fullscreen");
+      const ind = params.get("index");
 
       const images = document.querySelectorAll(".gallery>img");
       const prev = document.getElementById("prev");
       const next = document.getElementById("next");
-      let index = 0;
+      let index = ind || 0;
       let interval;
 
       function showImage(newIndex) {
@@ -227,6 +227,10 @@
 
       function nextImage() {
         showImage(index + 1);
+      }
+
+      function currImage() {
+        showImage(index);
       }
 
       function prevImage() {
@@ -258,10 +262,20 @@
 
       document.addEventListener("pointerup", () => {
         if (fs == "true") return;
-        window.parent.postMessage({ type: "gallery-about-click" }, "*");
+        window.parent.postMessage(
+          {
+            type: "gallery-about-click",
+            index: index,
+          },
+          "*"
+        );
       });
 
-      startCycle();
+      if (fs) {
+        currImage();
+      } else {
+        startCycle();
+      }
     </script>
   </body>
 </html>

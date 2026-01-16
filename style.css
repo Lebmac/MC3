@@ -459,7 +459,7 @@ nav .center {
 }
 
 .about-quote .emphasise {
-  color: var(-content);
+  color: var(--content);
   font-style: italic;
   font-size: 2rem;
 }
