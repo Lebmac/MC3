@@ -10,7 +10,7 @@
       style-src  'self' https: 'unsafe-inline';
       img-src    'self' https: data: blob:;
       font-src   'self' https: data:;
-      connect-src 'self' https: wss:;
+      connect-src 'self' https: wss: ws:;
       frame-src  'self' https:;"
     >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -172,13 +172,13 @@
       <section
         id="about"
         class="fixed"
-        data-animate="height"
+        data-animate="staticWipeUp"
         data-start-pos="0"
         data-end-pos="200"
         data-start-val="0"
         data-end-val="90"
       >
-        <div class="flex-container">
+        <div class="flex-container wipe-content">
           <div class="column hide-narrow">
             <div class="about-sticky">
               <iframe
@@ -461,7 +461,7 @@
       <section
         id="contact"
         class="fixed"
-        data-animate="height"
+        data-animate="staticWipeUp"
         data-snap="none"
         data-start-pos="4500"
         data-end-pos="4900"
@@ -472,6 +472,7 @@
         <!-- contact section wipe out to make room for footer -->
         <div
           id="contact-wipe"
+          class="wipe-content"
           data-animate="moveY"
           data-snap="none"
           data-start-pos="5900"

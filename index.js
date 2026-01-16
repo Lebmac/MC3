@@ -255,6 +255,8 @@ function scale(el, progress, startVal=1, endVal=1.2, options="") {
   el.css("--scale", appBoundValue);
 }
 
+// Don't use - superseded by staticWipeUp
+// This function hogs resources by triggering reflow
 function height(el, progress, startVal=0, endVal=100, options="") {
   const lowerAppBound = Math.min(startVal, endVal);
   const upperAppBound = Math.max(startVal, endVal);
@@ -262,6 +264,16 @@ function height(el, progress, startVal=0, endVal=100, options="") {
   const appBoundValue = clamp(fctBoundValue, lowerAppBound, upperAppBound);
 
   el.css("--height", appBoundValue + 'dvh');
+}
+
+function staticWipeUp (el, progress, startVal=0, endVal=100, options="") {
+  const lowerAppBound = Math.min(startVal, endVal);
+  const upperAppBound = Math.max(startVal, endVal);
+  const fctBoundValue = Math.max((startVal + (1 - progress) * (endVal - startVal)), 0);
+  const appBoundValue = clamp(fctBoundValue, lowerAppBound, upperAppBound);
+
+  el.css("--child", (-1 * appBoundValue) + 'dvh');
+  el.css("--parent", appBoundValue + 'dvh');
 }
 
 function visible(el, progress, startVal=0, endVal=1, options="") {
