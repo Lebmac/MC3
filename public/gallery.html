@@ -222,12 +222,14 @@
         if (fs) clearInterval(interval);
       }
 
-      next.addEventListener("pointerup", () => {
+      next.addEventListener("pointerup", (e) => {
+        e.stopImmediatePropagation();
         nextImage();
         resetCycle();
       });
 
-      prev.addEventListener("pointerup", () => {
+      prev.addEventListener("pointerup", (e) => {
+        e.stopImmediatePropagation();
         prevImage();
         resetCycle();
       });
