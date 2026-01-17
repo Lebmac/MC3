@@ -147,13 +147,14 @@ $(function() {
       const endVal = parseFloat(el.data("end-val"));
       const options = el.data("options");
       const progress = clamp((scrollY - start) / (end - start), 0, 1);
+      const progOFlow = clamp((scrollY - start) / (end - start), -0.1, 1.1);
       const progressSnap = clamp((scrollYSnap - start) / (end - start), 0, 1);
 
       const anims = (el.data("animate") || "").split(/\s+/);
 
       anims.forEach(anim => {
 
-        option_DisplayOutsideProgressBound(el, progress, options);
+        option_DisplayOutsideProgressBound(el, progOFlow, options);
 
         if (el.data("snap") === "snap") {
           window[anim](el, progressSnap, startVal, endVal, options);
@@ -197,9 +198,9 @@ function getAttributeValue(options="", attribute="") {
 // -----------------
 
 function option_DisplayOutsideProgressBound(el, progress, options) {
-  if (progress === 0 && getAttributeValue(options, "display-start") === "none") {
+  if (progress === -0.1 && getAttributeValue(options, "display-start") === "none") {
     el.css("display", "none");
-  } else if (progress === 1 && getAttributeValue(options, "display-end") === "none") {
+  } else if (progress === 1.1 && getAttributeValue(options, "display-end") === "none") {
     el.css("display", "none");
   } else {
     el.css("display", "");

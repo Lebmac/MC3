@@ -96,18 +96,22 @@ nav[data-animate] {
 }
 
 #merch[data-animate] {
-  transition: moveY 0.4s ease;
+  transition: transform 0.2s ease;
 }
 
 #contact[data-animate] {
-  transition: transform 0.4s ease;
+  transition: transform 0.2s ease;
   & .wipe-content {
-    transition: transform 0.4s ease;
+    transition: transform 0.2s ease;
   }
 }
 
-#footer-wipe[data-animate] {
+#contact-wipe[data-animate] {
   transition: transform 0.4s ease;
+}
+
+#footer-wipe[data-animate] {
+  transition: transform 0.2s ease;
 }
 
 [data-animate="opacity"] {
