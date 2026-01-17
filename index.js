@@ -199,9 +199,9 @@ function getAttributeValue(options="", attribute="") {
 
 function option_DisplayOutsideProgressBound(el, progress, options) {
   if (progress === -0.1 && getAttributeValue(options, "display-start") === "none") {
-    setTimeout(() => { el.css("display", "none"); }, 200); 
+    el.css("display", "none");
   } else if (progress === 1.1 && getAttributeValue(options, "display-end") === "none") {
-    setTimeout(() => { el.css("display", "none"); }, 200); 
+    el.css("display", "none");
   } else {
     el.css("display", "");
   }

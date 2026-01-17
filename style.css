@@ -338,6 +338,10 @@ nav .center {
   display: none !important;
 }
 
+#nav-mob-title {
+  font-size: 2em;
+}
+
 #nav-mob {
   display: flex;
   flex-direction: column;
@@ -562,6 +566,7 @@ nav .center {
   min-width: 200%;
   min-height: 200%;
   transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 #cafe-container {
