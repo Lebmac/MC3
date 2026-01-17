@@ -107,7 +107,7 @@ nav[data-animate] {
 }
 
 #footer-wipe[data-animate] {
-  transition: transform 0.2s ease;
+  transition: transform 0.4s ease;
 }
 
 [data-animate="opacity"] {
