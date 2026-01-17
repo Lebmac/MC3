@@ -514,7 +514,7 @@ nav .center {
 
 #cafe {
   width: 100%;
-  height: 90dvh;
+  height: 100dvh;
   bottom: 0px;
   overflow: hidden;
   z-index: 10;
@@ -1117,7 +1117,7 @@ footer > img {
   box-sizing: border-box;
   height: 100dvh;
   width: 100dvw;
-  padding: 2% 10%;
+  padding: 7% 10%;
   background-color: RGBA(0, 0, 0, 0.4);
   z-index: 900;
 
