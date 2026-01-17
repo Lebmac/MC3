@@ -1,0 +1,9 @@
+{
+  "name": "MC3 Motorcycle Collection & Cafe",
+  "short_name": "MC3",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#efefe5"
+}
