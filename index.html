@@ -68,7 +68,7 @@
         <img
           class="bg-img"
           src="./assets/images/motorcycle-wallpaper.v1.webp"
-          loading="lazy"
+          fetchpriority="high"
         alt="motorcycle-wallpaper"
         />
       </div>
@@ -78,6 +78,7 @@
         id="home-badges"
         class="fixed"
         data-animate="moveY"
+        data-snap="snap"
         data-start-pos="0"
         data-end-pos="200"
         data-start-val="0"
@@ -86,14 +87,14 @@
         <div class="title-flex">
           <div class="pad-box"></div>
           <div class="brand-flex">
-            <img class="title-brand" src="./assets/logos/mc3-colour.svg" loading="lazy" alt="MC3 logo"/>
+            <img class="title-brand" src="./assets/logos/mc3-colour.svg" fetchpriority="high" alt="MC3 logo"/>
             <img
               class="title-brand"
               src="./assets/logos/cafe-racer-colour.svg"
-              loading="lazy"
+              fetchpriority="high"
               alt="cafe racer logo"
             />
-            <img class="title-brand" src="./assets/logos/ripe.v1.webp" loading="lazy" alt="Ripe coffee roasters logo"/>
+            <img class="title-brand" src="./assets/logos/ripe.v1.webp" fetchpriority="high" alt="Ripe coffee roasters logo"/>
           </div>
           <div id="title-decal-wrap">
             <iframe
@@ -101,6 +102,7 @@
               src="./public/title-decal.html"
               title="title decal"
               style="border: none"
+              fetchpriority="high"
             >
             </iframe>
           </div>
@@ -112,6 +114,7 @@
         id="nav"
         class="fixed"
         data-animate="moveY"
+        data-snap="snap"
         data-start-pos="0"
         data-end-pos="200"
         data-start-val="90"
@@ -184,6 +187,7 @@
         id="about"
         class="fixed"
         data-animate="staticWipeUp"
+        data-snap="snap"
         data-start-pos="0"
         data-end-pos="200"
         data-start-val="0"

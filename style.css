@@ -49,6 +49,17 @@
   background: var(--content);
 }
 
+html {
+    font-family:
+    "Poppins",
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+}
+
 html, body {
   margin: 0px;
   padding: 0px;
