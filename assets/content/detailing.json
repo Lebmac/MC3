@@ -1,0 +1,30 @@
+{
+  "tabText": "MC3 | Detailing Services",
+  "heroImage": "assets/images/gallery-about/20260111_MC3_collection2.v1.webp",
+  "heroTitle": "Motorcycle Detailing by MC3",
+  "heroContent": "Let our pride be your joy",
+  "bodyContent": [
+    {
+      "type": "h3",
+      "text": "Motorcycle Detailing"
+    },
+    {
+      "type": "p",
+      "text": "Our motorcycle detailing service restores your bike’s finish to its best condition, from paint and metal to wheels and trim. Using careful cleaning, polishing, and protection techniques, we remove grime, oxidation, and road wear—leaving your motorcycle looking sharp, protected, and ready to ride or display."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Where is MC3 located?",
+      "a": "MC3 is located in New Zealand. Follow our website and social channels for opening hours and events."
+    },
+    {
+      "q": "Do I need to book to visit?",
+      "a": "Yes. Bookings are required for motorcycle detailing. Give us a call or pop in with your ride for a free consultation."
+    },
+    {
+      "q": "Can I bring my motorcycle?",
+      "a": "Yes, ride-ins are welcome during open hours and event days."
+    }
+  ]
+}

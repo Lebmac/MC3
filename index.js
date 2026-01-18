@@ -74,6 +74,10 @@ window.onload = function() {
   }
 }
 
+// ----------------------------
+// FULLSCREEN GALLERY FUNCTIONS
+// ----------------------------
+
 var aboutModal = document.getElementById("about-gallery-modal-bg");
 var aboutModalGal = document.getElementById("about-gallery-modal");
 var cafeModal = document.getElementById("cafe-gallery-modal-bg");

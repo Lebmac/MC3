@@ -1,0 +1,30 @@
+{
+  "tabText": "MC3 Café",
+  "heroImage": "assets/images/gallery-about/20260111_MC3_collection2.v1.webp",
+  "heroTitle": "Motorcycle Collection & Café",
+  "heroContent": "MC3 is a space dedicated to classic motorcycles, custom builds, good coffee, and garage culture.",
+  "bodyContent": [
+    {
+      "type": "h3",
+      "text": "Lorem ipsum"
+    },
+    {
+      "type": "p",
+      "text": "Lorem ipsum"
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Where is MC3 located?",
+      "a": "MC3 is located in New Zealand. Follow our website and social channels for opening hours and events."
+    },
+    {
+      "q": "Do I need to book to visit?",
+      "a": "No booking is required for general visits, but special events may require tickets."
+    },
+    {
+      "q": "Can I bring my motorcycle?",
+      "a": "Yes, ride-ins are welcome during open hours and event days."
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self' https: data: blob:;
+      base-uri 'self';
+      object-src 'none';
+      script-src 'self' https: 'unsafe-inline' 'unsafe-eval';
+      style-src  'self' https: 'unsafe-inline';
+      img-src    'self' https: data: blob:;
+      font-src   'self' https: data:;
+      connect-src 'self' https: wss: ws:;
+      frame-src  'self' https:;"
+    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="MC3 is a motorcycle collection and café in New Zealand, showcasing classic bikes, burgers, coffee, and garage culture.">
+    <link 
+      rel="manifest" 
+      href="./manifest.webmanifest"
+    >
+    <meta name="theme-color" content="#efefe5">
+    <title>Placeholder</title>
+    <link
+      rel="preload"
+      href="/assets/fonts/Poppins-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
+    <link 
+      rel="stylesheet" 
+      href="./style.css" 
+    />
+    <link 
+      rel="stylesheet" 
+      href="./page.css" 
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "MC3",
+        "alternateName": "MC3 Motorcycle Collection & Café",
+        "url": "https://mc3.nz/"
+      }
+    </script>
+  </head>
+  <body>
+      <nav
+        id="nav"
+        class="fixed"
+      >
+        <div class="nav center">
+          <!-- calc the contents of this div from nav1 -->
+          <a href="./index.html#section-home" class="nav-link nav-home active">
+            <span class="nav-link-span">
+              <span class="u-nav">Home</span>
+            </span>
+          </a>
+          <a href="./index.html#section-about" class="nav-link">
+            <span class="nav-link-span">
+              <span class="u-nav">About</span>
+            </span>
+          </a>
+          <a href="./index.html#section-cafe" class="nav-link">
+            <span class="nav-link-span">
+              <span class="u-nav">Cafe</span>
+            </span>
+          </a>
+          <a href="./index.html#section-service" class="nav-link">
+            <span class="nav-link-span">
+              <span class="u-nav">Services</span>
+            </span>
+          </a>
+          <a href="./index.html#section-merch" class="nav-link">
+            <span class="nav-link-span">
+              <span class="u-nav">Merch</span>
+            </span>
+          </a>
+          <a href="./index.html#section-contact" class="nav-link">
+            <span class="nav-link-span">
+              <span class="u-nav">Contact</span>
+            </span>
+          </a>
+        </div>
+      </nav>
+
+      <!-- navbar mobile -->
+      <nav id="nav-mob" class="fixed">
+        <div class="permanent">
+          <h1 id="nav-mob-title">MC3 Collection & Cafe</h1>
+          <button
+            id="nav-mob-btn"
+            class="nav-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+            aria-haspopup="menu"
+            onClick="handleNavClick()"
+          >
+            ☰
+          </button>
+        </div>
+        <div id="nav-mob-menu">
+          <a href="./index.html#section-home" class="nav-mob-link">Home</a>
+          <a href="./index.html#section-about" class="nav-mob-link">About</a>
+          <a href="./index.html#section-about" class="nav-mob-link" onClick="handleAboutGalleryClick(0)">Gallery</a>
+          <a href="./index.html#section-cafe" class="nav-mob-link">Cafe</a>
+          <a href="./index.html#section-service" class="nav-mob-link">Services</a>
+          <a href="./index.html#section-merch" class="nav-mob-link">Merch</a>
+          <a href="./index.html#section-contact" class="nav-mob-link">Contact</a>
+        </div>
+      </nav>
+
+      <!-- services section fade in over cafe-->
+      <section
+        id="page"
+      >
+        <div class="page-hero">
+          <div class="washout"></div>
+          <img id="hero-img" src="./assets/images/spare-parts.v1.webp" />
+          <div class="hero-content">
+            <h2 class="hero-title">Placeholder title</h2>
+            <p class="hero-text">Placeholder paragraph</p>
+            <div id="actions">
+              <a href="tel:+64274417378">Call us now</a>
+              <a href="tel:+64274417378">Send us an email</a>
+            </div>
+          </div>
+        </div>  
+
+        <div class="page-detail">
+          <h3>Placeholder subtitle</h3>
+          <p>Placeholder paragraph</p>
+        </div>
+      </section>
+
+      <section id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">FAQs</h2>
+        <div class="faq-border">
+          <details class="faq-item">
+            <summary>Where is MC3 located?</summary>
+            <div class="faq-answer">
+              <p>MC3 is based in New Zealand. Check our site and socials for current opening hours and events.</p>
+            </div>
+          </details>
+
+          <details class="faq-item">
+            <summary>Do I need to book?</summary>
+            <div class="faq-answer">
+              <p>No booking is required for general visits. Some special events may require tickets.</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <footer
+        id="page-footer"
+      >
+        <div id=footer-nav">
+          <a href="./index.html#section-home" class="foot-link">Home</a>
+          <a href="./index.html#section-about" class="foot-link">About</a>
+          <a href="./index.html#section-cafe" class="foot-link">Cafe</a>
+          <a href="./index.html#section-service" class="foot-link">Services</a>
+          <a href="./index.html#section-merch" class="foot-link">Merch</a>
+          <a href="./index.html#section-contact" class="foot-link">Contact</a>
+        </div>
+        <p>
+          47 Montgomery Cr.<br>
+          Clouston Park<br>
+          Upper Hutt<br>
+          5018
+        </p>
+        <p>
+          Ph - (04) 526-2210<br>
+          Email - richard@mc3.nz
+        </p>
+        <p>© 2026 MC3 Collection & Cafe. All rights reserved.</p>
+      </footer>
+    </div>
+
+    <!-- Import jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Mobile nav bar functions -->
+    <script>
+      // -------------------------
+      // MOBILE NAV MENU FUNCTIONS
+      // -------------------------
+
+      var navMob = document.getElementById("nav-mob");
+      var menu = document.getElementById("nav-mob-menu");
+      var title = document.getElementById("nav-mob-title");
+      var navBtn = document.getElementById("nav-mob-btn");
+      var links = document.getElementsByClassName("nav-mob-link");
+      menu.style.display = "none";
+
+      function handleNavClick() {
+        if (menu.style.display === "none") {
+          menu.style.display = "flex";
+          navMob.style.backgroundColor = "#503622";
+          title.style.color = "#efefe5";
+          navBtn.style.color = "#efefe5";
+        } else {
+          menu.style.display = "none";
+          navMob.style.backgroundColor = "#efefe5";
+          title.style.color = "#764e2f";
+          navBtn.style.color = "#764e2f";
+        }
+      }
+
+      window.onload = function() {
+        for (let i=0; i < links.length; i++) {
+          links[i].addEventListener("pointerup", () => {
+            setTimeout(() => {
+              handleNavClick();
+            }, 100);  
+          });
+        }
+      }
+    </script>
+
+    <!-- Import json from params and write contents to doc -->
+    <script>
+      async function getContent() {
+        const params = new URLSearchParams(window.location.search);
+        const item = params?.get("content") || "prototype";
+        return await  $.getJSON(`./assets/content/${item}.json`);
+      }
+
+      function toHtml(array) {
+        const types = ["h3", "p"];
+        let html = "";
+        array.forEach(el => {
+          if (types.includes(el.type)) {
+            html += `<${el.type}>${el.text}</${el.type}>`;
+          }
+        });
+        return html;
+      }
+
+      function faqItems(array) {
+        let html = "";
+        array.forEach(el => {
+          html += `
+            <details class="faq-item">
+              <summary>${el.q}</summary>
+              <div class="faq-answer">
+                <p>${el.a}</p>
+              </div>
+            </details>`;
+        });
+        return html;
+      }
+
+      getContent().then((content) => {
+        document.title = content.tabText;
+        $("#hero-img").attr("src", content.heroImage);
+        $(".hero-title").text(content.heroTitle);
+        $(".hero-text").text(content.heroContent);
+        $(".page-detail").html(toHtml(content.bodyContent));
+        $(".faq-border").html(faqItems(content.faqs));
+      }); 
+    </script>
+  </body>
+</html>

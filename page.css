@@ -1,0 +1,190 @@
+/* =========================
+   Page menu section styles
+   ========================= */
+
+html {
+  overscroll-behavior: none;
+  
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(45deg, var(--accent) 12%, transparent 0, transparent 88%, var(--accent) 0), linear-gradient(135deg, transparent 37%, var(--accent) 0, var(--accent) 63%, transparent 0), linear-gradient(45deg, transparent 37%, var(--accent) 0, var(--accent) 63%, transparent 0), var(--accent-dbl);
+  background-size: 80px 80px;
+  background-position: bottom;
+  scrollbar-gutter: stable;
+}
+
+section {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.page-content {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 2rem;
+  padding-top: 2rem;
+}
+
+.page-card {
+  background-color: var(--card);
+  border: 1px solid var(--content);
+}
+
+.page-hero {
+  display: grid;
+  grid-template: 50dvh / 100dvw;
+  overflow: hidden;
+  align-items: center;
+  justify-items: center;
+  padding-top: 10dvh;
+  text-align: center;
+
+  & * {
+    grid-area: 1 / 1 / 1 / 1;
+  }
+
+  & .washout {
+    height: 100%;
+    width: 100%;
+    background-color: var(--card);
+  }
+  
+  & img {
+    object-fit: fill;
+    width: 100dvw;
+    opacity: 0.4;
+    z-index: 1;
+  }
+
+  .hero-content {
+    background-color: var(--card);
+    border: 1px solid var(--content);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  & h2 {
+    padding: 2dvh 8dvw 1dvh;
+    z-index: 2;
+    
+  }
+
+  & p {
+    max-width: 50dvw;
+    padding: 0px 5dvw;
+  }
+
+  & #actions {
+    margin: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  @media (min-width: 600px) {
+  #actions {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+
+  & a {
+    padding: 0.6rem 1.3rem;
+    
+    background-color: var(--accent);
+    border: 1px solid var(--content);
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--content);
+    box-shadow: inset 0px 0px 10px var(--accent-dbl);
+  }
+
+  & a:hover {
+    background-color: var(--card);
+  }
+}
+
+.page-detail {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--card);
+  border-bottom: 1px solid var(--content);
+  padding: 1rem 15dvh;
+}
+
+#faq {
+  padding: 2rem;
+ 
+  & .faq-border {
+    border: 1px solid var(--content);
+  }
+}
+
+.faq-item {
+  padding: 1rem;
+  background-color: var(--card);
+
+  & summary {
+    color: var(--content);
+    font-weight: 600;
+    font-size: large;
+  }
+}
+
+
+.page-card .card-content {
+  padding: 1rem;
+}
+
+.page-card .card-content {
+  height: calc(100% - 2rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 0.15rem;
+  line-height: 2.1rem;
+  text-transform: uppercase;
+
+  width: 100%;
+  
+  color: var(--card);
+  text-shadow: -1px -1px 0 var(--content), 1px -1px 0 var(--content), -1px 1px 0 var(--content), 1px 1px 0 var(--content);
+}
+
+.hero-title .emphasise {
+  color: var(--content);
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.hero-text, label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 0.12rem;
+  line-height: 1.8rem;
+  padding: 0px;
+  margin: 0.3rem 0rem;
+}
+
+#page-footer {
+  border-top: 1px solid var(--content);
+  position: relative;
+  height: min-content;
+}
+
