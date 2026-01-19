@@ -114,7 +114,6 @@ function handleCafeGalleryClick(index) {
 function closeModal() {
   aboutModal.style.display = "none";
   cafeModal.style.display = "none";
-
 }
 
 // ---------------------
@@ -230,7 +229,7 @@ function moveY(el, progress, startVal=0, endVal=100, options="") {
   const fctBoundValue = startVal + progress * (endVal - startVal);
   const appBoundValue = clamp(fctBoundValue, lowerAppBound, upperAppBound);
 
-  el.css("--translateY", appBoundValue + 'dvh'); 
+  el.css("--translateY", appBoundValue + 'svh'); 
 }
 
 function moveX(el, progress, startVal=0, endVal=100, options="") {
@@ -268,7 +267,7 @@ function height(el, progress, startVal=0, endVal=100, options="") {
   const fctBoundValue = Math.max((startVal + progress * (endVal - startVal)), 0);
   const appBoundValue = clamp(fctBoundValue, lowerAppBound, upperAppBound);
 
-  el.css("--height", appBoundValue + 'dvh');
+  el.css("--height", appBoundValue + 'svh');
 }
 
 function staticWipeUp (el, progress, startVal=0, endVal=100, options="") {
@@ -277,8 +276,8 @@ function staticWipeUp (el, progress, startVal=0, endVal=100, options="") {
   const fctBoundValue = Math.max((startVal + (1 - progress) * (endVal - startVal)), 0);
   const appBoundValue = clamp(fctBoundValue, lowerAppBound, upperAppBound);
 
-  el.css("--child", (-1 * appBoundValue) + 'dvh');
-  el.css("--parent", appBoundValue + 'dvh');
+  el.css("--child", (-1 * appBoundValue) + 'svh');
+  el.css("--parent", appBoundValue + 'svh');
 }
 
 function visible(el, progress, startVal=0, endVal=1, options="") {

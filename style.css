@@ -82,7 +82,7 @@ h1, h2, h3 {
 }
 
 .progress-bar {
-  min-height: calc(6100px + 100dvh);
+  min-height: calc(6100px + 100svh);
   background-color: black;
   overflow-x: hidden;
 }
@@ -100,7 +100,7 @@ h1, h2, h3 {
 }
 
 .panel {
-  height: 100dvh;
+  height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -166,13 +166,13 @@ nav[data-animate] {
 }
 
 [data-animate="height"] {
-  height: var(--height, 100dvh) !important;
+  height: var(--height, 100svh) !important;
 }
 
 [data-animate="staticWipeUp"] {
-  transform: translateY(var(--parent, 100dvh)) !important;
+  transform: translateY(var(--parent, 100svh)) !important;
   & .wipe-content {
-    transform: translateY(var(--child, 0dvh)) !important;
+    transform: translateY(var(--child, 0svh)) !important;
   }
 }
 
@@ -202,7 +202,7 @@ nav[data-animate] {
 /*  position for less than 500px vp width 
     when nav menu is top of screen */
 #home-badges {
-  top: 10dvh;
+  top: 10svh;
 }
 
 .bg-secret {
@@ -212,7 +212,7 @@ nav[data-animate] {
 }
 
 .title-flex {
-  height: 90dvh !important;
+  height: 90svh !important;
   width: 96svw;
   display: flex;
   flex-direction: column;
@@ -227,7 +227,7 @@ nav[data-animate] {
   width: 100%;
   justify-content: space-evenly;
   justify-items: center;
-  padding: 2dvh;
+  padding: 2svh;
   filter: drop-shadow(6px 6px 0px RGBA(0, 0, 0, 0.5));
 }
 
@@ -237,20 +237,20 @@ nav[data-animate] {
 
 
 #title-decal-wrap { 
-  padding: 1.5dvh 6dvw;
-  height: 75dvh;
+  padding: 1.5svh 6dvw;
+  height: 75svh;
   display: flex;
   align-items: center;
 }
 
 #title-decal { 
-  width: min(65dvh, 90dvw);
-  height: min(65dvh, 90dvw);
+  width: min(65svh, 90dvw);
+  height: min(65svh, 90dvw);
   filter: drop-shadow(15px 15px 0px RGBA(0, 0, 0, 0.4));
 }
 
 .pad-box {
-  height: 5dvh;
+  height: 5svh;
 }
 
 @media (max-width: 500px) {
@@ -261,7 +261,7 @@ nav[data-animate] {
 
 @media (orientation: landscape) {
   .title-flex {
-    height: 90dvh;
+    height: 90svh;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -274,7 +274,7 @@ nav[data-animate] {
     justify-content: space-around !important;
     justify-items: center;
     align-items: center;
-    padding: 3dvh;
+    padding: 3svh;
   }
 
   .title-brand {
@@ -297,7 +297,7 @@ nav[data-animate] {
   flex-direction: column;
 
   font-family: "Poppins", sans-serif;
-  height: 10dvh;
+  height: 10svh;
   overflow: hidden;
   
   background-color: var(--card);
@@ -312,8 +312,8 @@ nav[data-animate] {
 
 .nav {
   display: flex;
-  height: 10dvh;
-  line-height: 10dvh;
+  height: 10svh;
+  line-height: 10svh;
   flex-grow: 1;
 }
 
@@ -331,7 +331,7 @@ nav a:link, nav a:visited, nav a:active {
 nav .center {
   display: flex;
   flex-direction: column;
-  height: 10dvh;
+  height: 10svh;
 }
 
 .nav-hide {
@@ -346,14 +346,14 @@ nav .center {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 10dvh;
+  min-height: 10svh;
   z-index: 999;
   background-color: var(--card);
   border-bottom: 1px solid var(--content);
 
   & .permanent {
     width: 100%;
-    height: 10dvh;
+    height: 10svh;
     box-sizing: border-box;
     display: flex;
     padding: 1rem;
@@ -398,7 +398,7 @@ nav .center {
   }
 
   #home-badges {
-    top: 0dvh;
+    top: 0svh;
   }
 
   #nav-wrapper {
@@ -445,7 +445,7 @@ nav .center {
    ======================== */
 #about {
   width: 100%;
-  height: 90dvh;
+  height: 90svh;
   bottom: 0px;
   overflow: hidden;
   
@@ -473,7 +473,7 @@ nav .center {
 .about-sticky {
   position: absolute;
   bottom: 0px;
-  height: 90dvh;
+  height: 90svh;
   width: 100%;
 
   overflow: hidden;
@@ -488,7 +488,7 @@ nav .center {
 .about-scroll {
   position: absolute;
   bottom: 0px;
-  height: 90dvh;
+  height: 90svh;
   width: 100%;
 
   overflow-y: hidden;
@@ -553,7 +553,7 @@ nav .center {
 
 #cafe {
   width: 100%;
-  height: 100dvh;
+  height: 100svh;
   bottom: 0px;
   overflow: hidden;
   z-index: 10;
@@ -562,7 +562,7 @@ nav .center {
 #cafe-bg {
   position: absolute;
   left: 50dvw;
-  top: 50dvh;
+  top: 50svh;
   min-width: 200%;
   min-height: 200%;
   transform: translate(-50%, -50%);
@@ -570,13 +570,13 @@ nav .center {
 }
 
 #cafe-container {
-  min-height: 90dvh;
+  min-height: 90svh;
   width: 100%;
   box-sizing: border-box;
   display: grid;
   padding: 3dvw;
   column-gap: 8dvw;
-  row-gap: 4dvh;
+  row-gap: 4svh;
   align-items: flex-end;
   justify-content: center;
   justify-items: center;
@@ -620,7 +620,7 @@ nav .center {
 
 @media (orientation: landscape) {
   #cafe-container {
-    row-gap: 8dvh;
+    row-gap: 8svh;
     grid-template: 
     "logo cell-l" 1fr
     "cell-s cell-l" 1fr / auto auto;
@@ -655,7 +655,7 @@ nav .center {
 
 #services {
   width: 100%;
-  height: 90dvh;
+  height: 90svh;
   bottom: 0px;
   overflow: hidden;
   z-index: 20;
@@ -668,7 +668,7 @@ nav .center {
 .parts-scroll {
   position: absolute;
   bottom: 0px;
-  height: 90dvh;
+  height: 90svh;
   width: 100%;
 
   overflow-y: hidden;
@@ -759,8 +759,8 @@ nav .center {
 
 #merch {
   width: 100%;
-  height: 130dvh;
-  padding: 3dvh 0px;
+  height: 130svh;
+  padding: 3svh 0px;
   bottom: 0px;
   overflow: hidden;
   z-index: 30;
@@ -867,7 +867,7 @@ nav .center {
 .merch-chain {
   /* display: none; */
   position: relative;
-  /* bottom: clamp(-30dvh, calc(-60dvh + calc(17dvh * calc(0.8dvh / 1dvw))), -25dvh); */
+  /* bottom: clamp(-30svh, calc(-60svh + calc(17svh * calc(0.8svh / 1dvw))), -25svh); */
   transform: rotate(10deg) translate(10%, 30%);
   z-index: -1;
 }
@@ -879,9 +879,9 @@ nav .center {
   }
     
   .merch-col-two {  
-    padding: 2rem 1rem 1rem min(4rem,5dvh);
-    grid-template-rows: repeat(7, min(5.5dvw, 10dvh));
-    grid-template-columns: repeat(10, min(5.5dvw, 10dvh));
+    padding: 2rem 1rem 1rem min(4rem,5svh);
+    grid-template-rows: repeat(7, min(5.5dvw, 10svh));
+    grid-template-columns: repeat(10, min(5.5dvw, 10svh));
     justify-content: center;
 
   }
@@ -893,8 +893,8 @@ nav .center {
 
 #contact {
   width: 100%;
-  height: 90dvh;
-  padding: 0dvh 0px;
+  height: 90svh;
+  padding: 0svh 0px;
   bottom: 0px;
   overflow: hidden;
   z-index: 40;
@@ -902,8 +902,8 @@ nav .center {
 
 #contact-wipe {
   width: 100%;
-  height: 90dvh;
-  padding: 0dvh 0px;
+  height: 90svh;
+  padding: 0svh 0px;
   bottom: 0px;
   overflow: hidden;
 }
@@ -918,7 +918,7 @@ nav .center {
 
 .contact-scroll {
   position: absolute;
-  height: 90dvh;
+  height: 90svh;
   width: 100%;
 
   overflow-y: hidden;
@@ -1061,7 +1061,7 @@ button:hover {
 
 footer {
   width: 100%;
-  height: calc(40dvh - 20px); /* padding adjustment */
+  height: calc(40svh - 20px); /* padding adjustment */
   margin: 0px;
   padding: 10px 0px;
   z-index: 100;
@@ -1160,7 +1160,7 @@ footer > img {
   display: none;
   top: 0;
   box-sizing: border-box;
-  height: 100dvh;
+  height: 100svh;
   width: 100dvw;
   padding: 7% 10%;
   background-color: RGBA(0, 0, 0, 0.4);

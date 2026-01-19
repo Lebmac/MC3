@@ -38,11 +38,11 @@ section {
 
 .page-hero {
   display: grid;
-  grid-template: 50dvh / 100dvw;
+  grid-template: 50svh / 100dvw;
   overflow: hidden;
   align-items: center;
   justify-items: center;
-  padding-top: 10dvh;
+  padding-top: 10svh;
   text-align: center;
 
   & * {
@@ -72,7 +72,7 @@ section {
   }
 
   & h2 {
-    padding: 2dvh 8dvw 1dvh;
+    padding: 2svh 8dvw 1svh;
     z-index: 2;
     
   }
@@ -119,7 +119,7 @@ section {
   box-sizing: border-box;
   background-color: var(--card);
   border-bottom: 1px solid var(--content);
-  padding: 1rem 15dvh;
+  padding: 1rem 15svh;
 }
 
 #faq {
