@@ -686,7 +686,6 @@ nav .center {
   flex-direction: column;
   gap: 2rem;
   padding: 2rem 2rem;
-  margin-top: 10svh;
 }
 
 .info-card {
@@ -743,6 +742,10 @@ nav .center {
   line-height: 1.8rem;
   padding: 0px;
   margin: 0.3rem 0rem;
+}
+
+.parts-content .info-card:first-child {
+  margin-top: 10svh;
 }
 
 @media (min-width: 850px) {
@@ -898,7 +901,7 @@ nav .center {
 
 #contact {
   width: 100%;
-  height: 90svh;
+  height: 100svh;
   padding: 0svh 0px;
   bottom: 0px;
   overflow: hidden;
@@ -907,7 +910,7 @@ nav .center {
 
 #contact-wipe {
   width: 100%;
-  height: 90svh;
+  height: 100svh;
   padding: 0svh 0px;
   bottom: 0px;
   overflow: hidden;
@@ -923,7 +926,7 @@ nav .center {
 
 .contact-scroll {
   position: absolute;
-  height: 90svh;
+  height: 100svh;
   width: 100%;
 
   overflow-y: hidden;
@@ -1015,6 +1018,10 @@ button:hover {
   padding-top: 1rem;
 }
 
+.find-us {
+  margin-top: 10svh;
+}
+
 .social {
   display: none;
 }
@@ -1050,6 +1057,7 @@ button:hover {
     grid-row-end: 2;
     grid-column-start: 2;
     grid-column-end: 3;
+    margin-top: 10svh;
   }
 
   .subscriber {
