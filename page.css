@@ -12,7 +12,6 @@ body {
   flex-direction: column;
   background: linear-gradient(45deg, var(--accent) 12%, transparent 0, transparent 88%, var(--accent) 0), linear-gradient(135deg, transparent 37%, var(--accent) 0, var(--accent) 63%, transparent 0), linear-gradient(45deg, transparent 37%, var(--accent) 0, var(--accent) 63%, transparent 0), var(--accent-dbl);
   background-size: 80px 80px;
-  background-position: bottom;
   scrollbar-gutter: stable;
 }
 

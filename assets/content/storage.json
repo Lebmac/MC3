@@ -1,30 +1,38 @@
 {
-  "tabText": "MC3 Café",
-  "heroImage": "assets/images/gallery-about/20260111_MC3_collection2.v1.webp",
-  "heroTitle": "Motorcycle Collection & Café",
-  "heroContent": "MC3 is a space dedicated to classic motorcycles, custom builds, good coffee, and garage culture.",
+  "tabText": "MC3 / Vehicle Storage",
+  "heroImage": "assets/images/caravan.v1.webp",
+  "heroTitle": "MC3 Vehicle Storage",
+  "heroContent": "Monthly contracts for vehicle storage starting at $150/mo",
   "bodyContent": [
     {
       "type": "h3",
-      "text": "Lorem ipsum"
+      "text": "Car and Trailer Storage at MC3"
     },
     {
       "type": "p",
-      "text": "Lorem ipsum"
+      "text": "Our outdoor storage facility in Upper Hutt provides straightforward, 24/7 access with convenient entry from SH2. Ideal for Wellington and Hutt Valley customers needing secure motorhome, caravan, or trailer storage, it’s a practical base between trips with flexible month-to-month pricing from $150 per month including GST."
     }
   ],
   "faqs": [
     {
       "q": "Where is MC3 located?",
-      "a": "MC3 is located in New Zealand. Follow our website and social channels for opening hours and events."
+      "a": "MC3 is located in Upper Hutt, New Zealand. Follow our website and social channels for opening hours and events, or simply to stay in touch."
     },
     {
-      "q": "Do I need to book to visit?",
-      "a": "No booking is required for general visits, but special events may require tickets."
+      "q": "Does MC3 have security lighting and cameras?",
+      "a": "Yes, we operate 24/7 around the clock surveillance. Call us about storing your vehicle, boat, caravan, or motorhome today."
     },
     {
-      "q": "Can I bring my motorcycle?",
-      "a": "Yes, ride-ins are welcome during open hours and event days."
+      "q": "Do I have 24/7 access to my vehicle?",
+      "a": "Yes, we provide secure access to a gated and fenced compound with 24/7 access to authorised persons."
+    },
+    {
+      "q": "How much will it cost to store my vehicle?",
+      "a": "We calculate cost based on the area of your vehicle (length x width) to determine a monthly rate."
+    },
+        {
+      "q": "What payment options does MC3 accept?",
+      "a": "We invoice monthly and accept online banking transfers. GST Invoices are sent on the first day of each month and cover storage until the last day of the month."
     }
   ]
 }
