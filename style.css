@@ -757,7 +757,8 @@ nav .center {
 
   .info-card {
     flex-shrink: 1;
-    max-width: 40%
+    max-width: 40%;
+    margin-top: 10svh;
   }
 }
 
