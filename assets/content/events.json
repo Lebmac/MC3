@@ -1,0 +1,70 @@
+{
+  "tabText": "MC3 | Events and Sports Catering",
+  "heroImage": "assets/images/events.v1.webp",
+  "heroTitle": "Events and Catering at MC3",
+  "heroContent": "Good food, good space, and room to make it your own.",
+  "bodyContent": [
+    {
+      "type": "h3",
+      "text": "On site catering and events"
+    },
+    {
+      "type": "p",
+      "text": "Our on-site catering and events space offers a flexible setting suited to small gatherings, private functions, and casual brand or community events. With a relaxed, workshop-style atmosphere and food prepared on site, it’s a space designed to be practical, welcoming, and easy to tailor to the occasion."
+    },
+        {
+      "type": "h3",
+      "text": "Off site catering services"
+    },
+    {
+      "type": "p",
+      "text": "Our off-site catering brings the same straightforward, well-prepared food to your location. Suited to small functions, meetings, and casual events, we focus on reliable service and quality food that fits the setting. We have catered events with more than 75 meals per day."
+    }
+  ],
+  "faqs": [
+    {
+      "q": "Where is MC3 located?",
+      "a": "MC3 is located in Upper Hutt, New Zealand. Follow our website and social channels for opening hours and events, or simply to stay in touch."
+    },
+    {
+      "q": "What types of events do you cater for?",
+      "a": "We cater for small private events, casual functions, brand gatherings, and community meet-ups, both on-site and off-site."
+    },
+    {
+      "q": "Do you offer on-site and off-site catering?",
+      "a": "Yes. Catering is available at our venue or at your chosen location."
+    },
+    {
+      "q": "How many people can you cater for?",
+      "a": "We focus on small to medium-sized groups. Capacity depends on the event style and location - get in touch to discuss specifics."
+    },
+    {
+      "q": "Is the events space suitable for private bookings?",
+      "a": "Yes. Our events space can be booked exclusively for private functions."
+    },
+    {
+      "q": "Can menus be customised?",
+      "a": "Menus can be tailored to suit the event, including dietary requirements where possible."
+    },
+    {
+      "q": "Do you provide staff for events?",
+      "a": "Staffing can be included depending on the size and nature of the event."
+    },
+    {
+      "q": "How far in advance should I book?",
+      "a": "We recommend booking as early as possible, especially for weekends, but short-notice enquiries are welcome."
+    },
+    {
+      "q": "How far in advance should I book?",
+      "a": "We recommend booking as early as possible, especially for weekends, but short-notice enquiries are welcome."
+    },
+    {
+      "q": "Can you cater for outdoor or workshop-style events?",
+      "a": "Yes. Our catering is well suited to relaxed, practical environments including outdoor and workshop-style settings."
+    },
+    {
+      "q": "How do I make an enquiry or booking?",
+      "a": "Contact us with your event date, location, and estimated numbers, and we’ll take it from there."
+    }
+  ]
+}
