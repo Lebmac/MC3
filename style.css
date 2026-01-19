@@ -473,7 +473,7 @@ nav .center {
 .about-sticky {
   position: absolute;
   bottom: 0px;
-  height: 90svh;
+  height: 100svh;
   width: 100%;
 
   overflow: hidden;
