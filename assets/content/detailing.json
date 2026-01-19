@@ -1,8 +1,8 @@
 {
   "tabText": "MC3 | Detailing Services",
-  "heroImage": "assets/images/gallery-about/20260111_MC3_collection2.v1.webp",
+  "heroImage": "assets/images/gallery-about/20260111_MC3_Suzuki_GT550_Side.v1.webp",
   "heroTitle": "Motorcycle Detailing by MC3",
-  "heroContent": "Let our pride be your joy",
+  "heroContent": "Take your ride from rust to radiance",
   "bodyContent": [
     {
       "type": "h3",
@@ -10,21 +10,37 @@
     },
     {
       "type": "p",
-      "text": "Our motorcycle detailing service restores your bike’s finish to its best condition, from paint and metal to wheels and trim. Using careful cleaning, polishing, and protection techniques, we remove grime, oxidation, and road wear—leaving your motorcycle looking sharp, protected, and ready to ride or display."
+      "text": "Experience a luxury hot water shampoo of your machine, we'll degrease the oily bits followed by a touch-less warm air dry that ensures every hard-to-reach area is free of water and road grime. Afterward, we apply a premium wax polish to enhance and protect the painted surfaces, giving your bike a lasting shine"
+    },
+        {
+      "type": "h3",
+      "text": "Pricing and Options"
+    },
+    {
+      "type": "ul",
+      "text": "<li>2 hour detailing package - minimum $175.00 (excl. GST)</li><li>Pickup and Delivery - Location dependent, call us for pricing</li>"
     }
   ],
   "faqs": [
     {
       "q": "Where is MC3 located?",
-      "a": "MC3 is located in New Zealand. Follow our website and social channels for opening hours and events."
+      "a": "MC3 is located in Upper Hutt, New Zealand. Follow our website and social channels for opening hours and events, or simply to stay in touch."
     },
     {
-      "q": "Do I need to book to visit?",
-      "a": "Yes. Bookings are required for motorcycle detailing. Give us a call or pop in with your ride for a free consultation."
+      "q": "Can you pick up and deliver my motorcycle?",
+      "a": "Yes. Additional fees will apply and bookings are essential. We trailer bikes to MC3 and we will not ride your motorcycle. Give us a call or pop in with your ride for a free consultation."
     },
     {
-      "q": "Can I bring my motorcycle?",
-      "a": "Yes, ride-ins are welcome during open hours and event days."
+      "q": "Do I need a booking?",
+      "a": "Yes, bookings are essential. Give us a call or pop in with your ride for a free consultation."
+    },
+    {
+      "q": "How long will it take to detail my motorcycle?",
+      "a": "We spend 2 hours on every motorcycle we clean. With optional same-day pickup and return for locals (additional fees apply)."
+    },
+        {
+      "q": "My bike has a lot of chrome, is this included in the 2 hour detailing package?",
+      "a": "Chrome requires special attention, therefore we offer custom packages for chromewear. Our 2 hour detailing package does not cater for this."
     }
   ]
 }
