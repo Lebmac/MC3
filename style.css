@@ -488,7 +488,7 @@ nav .center {
 .about-scroll {
   position: absolute;
   bottom: 0px;
-  height: 90svh;
+  height: 100svh;
   width: 100%;
 
   overflow-y: hidden;
@@ -535,6 +535,10 @@ nav .center {
   border: 1px solid var(--content);
   margin: 2rem;
   padding: 1rem;
+}
+
+.about-content>div:first-child{
+  margin-top: calc(4rem + 10svh);
 }
 
 @media (min-width: 650px) {
