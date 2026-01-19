@@ -709,7 +709,7 @@ nav .center {
 }
 
 .card-content {
-  height: calc(100% - 2rem);
+  height: max-content;
   display: flex;
   flex-direction: column;
 }
@@ -742,8 +742,13 @@ nav .center {
   line-height: 1.8rem;
   padding: 0px;
   margin: 0.3rem 0rem;
+
+  &.bold {
+    font-weight: 600;
+  }
 }
 
+/* extra margin single mobile only */
 .parts-content .info-card:first-child {
   margin-top: 10svh;
 }
@@ -758,6 +763,11 @@ nav .center {
   .info-card {
     flex-shrink: 1;
     max-width: 40%;
+
+  }
+
+  /* extra margin two columns */
+  .top-card {
     margin-top: 10svh;
   }
 }

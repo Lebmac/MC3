@@ -1,30 +1,54 @@
 {
-  "tabText": "MC3 Café",
+  "tabText": "MC3 | Parts and Dismantling",
   "heroImage": "assets/images/gallery-about/20260111_MC3_collection2.v1.webp",
-  "heroTitle": "Motorcycle Collection & Café",
-  "heroContent": "MC3 is a space dedicated to classic motorcycles, custom builds, good coffee, and garage culture.",
+  "heroTitle": "MC3 Motorcycle Dismantlers",
+  "heroContent": "In need of a kickstart? MC3 may have the part you're looking for.",
   "bodyContent": [
     {
       "type": "h3",
-      "text": "Lorem ipsum"
+      "text": "Motorcycle Parts to Your Doorstep"
     },
     {
       "type": "p",
-      "text": "Lorem ipsum"
+      "text": "MC3 dismantlers is an NZ based motorcycle dismantling business specialising in classic Japanese motorcycles & used parts. Do you need parts for your 1970-2000 road bike? Please contact us - we may have the parts you need to keep your bike running like new. View our current inventory on <a href='https://www.trademe.co.nz/a/search?member_listing=9457173'>TradeMe</a>"
+    },
+    {
+      "type": "p",
+      "text": "We offer both Domestic and International shipping. So no matter where you are in the world, you're always welcome to shop at MC3 dismantlers."
+    },
+    {
+      "type": "p",
+      "text": "Yes, we sell parts & we also buy whole, part, or crashed machines to support our inventory. We constantly update our stock with new parts, so please check in regularly. sign up for our monthly newsletter which states "
+    },
+    {
+      "type": "p",
+      "text": "We also list a selection of parts in our monthly newsletter. Keep up-to-date by signing up. Visit the contact section of our website for more detail."
+    },
+    {
+      "type": "h3",
+      "text": "MC3 Wreckers Current Inventory."
+    },
+    {
+      "type": "p",
+      "text": "View our current inventory on <a href='https://www.trademe.co.nz/a/search?member_listing=9457173'>TradeMe</a>."      
     }
   ],
   "faqs": [
     {
       "q": "Where is MC3 located?",
-      "a": "MC3 is located in New Zealand. Follow our website and social channels for opening hours and events."
+      "a": "MC3 is located in Upper Hutt, New Zealand. Follow our website and social channels for opening hours and events, or simply to stay in touch."
     },
     {
-      "q": "Do I need to book to visit?",
-      "a": "No booking is required for general visits, but special events may require tickets."
+      "q": "Do MC3 offer ship parts internationally?",
+      "a": "Yes, MC3 ship parts domestically and internationally to your doorstep. Contact us for pricing."
     },
     {
-      "q": "Can I bring my motorcycle?",
-      "a": "Yes, ride-ins are welcome during open hours and event days."
+      "q": "Which bikes do MC3 supply parts for?",
+      "a": "MC3 supply parts for older Japanese bikes. Sorry we do not wreck current models, scooters, or off-road bikes."
+    },
+    {
+      "q": "How do I view MC3's parts catalogue?",
+      "a": "We list our range of parts on <a href='https://www.trademe.co.nz/a/search?member_listing=9457173'>TradeMe</a>. Alternatively please call or email us to enquire about the bikes we are currently dismantling, or subscribe to our monthly newsletter for monthly updates on our current inventory."      
     }
   ]
 }
