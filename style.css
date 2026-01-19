@@ -693,8 +693,11 @@ nav .center {
   border: 1px solid var(--content);
 
   & a {
+    height: 100%;
     text-decoration: none;
     color: inherit;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -709,7 +712,7 @@ nav .center {
 }
 
 .card-content {
-  height: max-content;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -745,6 +748,8 @@ nav .center {
 
   &.bold {
     font-weight: 600;
+    flex-grow: 2;
+    align-content: end;
   }
 }
 
