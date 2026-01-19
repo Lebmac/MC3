@@ -118,11 +118,11 @@ section {
   box-sizing: border-box;
   background-color: var(--card);
   border-bottom: 1px solid var(--content);
-  padding: 1rem 15svh;
+  padding: 1rem 15svw;
 }
 
 #faq {
-  padding: 2rem;
+  padding: 2rem 15svw;
  
   & .faq-border {
     border: 1px solid var(--content);
