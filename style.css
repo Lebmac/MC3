@@ -823,6 +823,7 @@ nav .center {
 }
 
 .shop-item.top img {
+  width: 130%;;
   transform: translate(-50%, -50%) rotate(10deg);
 }
 
@@ -836,6 +837,7 @@ nav .center {
 }
 
 .shop-item.bottom img {
+  width: 130%;
   transform: translate(-50%, -50%) rotate(-10deg);
 }
 
